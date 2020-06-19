@@ -13,8 +13,7 @@ summary:
 categories: 
 tags:
 keywords:
-reprintPolicy: cc_by
-
+reprintPolicy: cc_by_nc_sa
 lang: en
 updated: {{ updated }}
 comments: true
