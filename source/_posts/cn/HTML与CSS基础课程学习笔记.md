@@ -6,13 +6,13 @@ cover: true
 toc: true
 mathjax: false
 reprintPolicy: cc_by_nc_sa
-lang: en
+lang: cn
 comments: true
-date: 2017-10-18 22:00:00
+date: 2017-10-18 22:02:00
 img: https://res.cloudinary.com/imgcave/image/upload/v1592660804/Img/BlogCover/blogTopImage_qh8ggl.png
 coverImg: https://res.cloudinary.com/imgcave/image/upload/v1592660804/Img/BlogCover/blogTopImage_qh8ggl.png
 password:
-summary: 慕课网《HTML与CSS基础课程》学习备忘笔记
+summary: 慕课网《HTML与CSS基础课程》学习笔记
 categories:
 - Dev
 tags:
@@ -21,7 +21,7 @@ tags:
 - HTML
 - CSS
 keywords:
-updated: 2017-10-18 22:00:00
+updated: 2017-10-18 22:02:00
 ---
 
 # 备注

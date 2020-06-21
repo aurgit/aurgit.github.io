@@ -6,13 +6,13 @@ cover: false
 toc: true
 mathjax: false
 reprintPolicy: cc_by_nc_sa
-lang: en
+lang: cn
 comments: true
-date: 2017-04-16 22:00:00
+date: 2017-04-16 22:01:00
 img: https://res.cloudinary.com/imgcave/image/upload/v1592659485/Img/BlogCover/MDN_bsrzjo.jpg
 coverImg: https://res.cloudinary.com/imgcave/image/upload/v1592659485/Img/BlogCover/MDN_bsrzjo.jpg
 password:
-summary: 关于教程中网站发布过程中一些细节问题的解决
+summary: 教程中网站发布过程中一些细节问题的解决
 categories: 
 - Dev
 tags:
@@ -20,7 +20,7 @@ tags:
 - Git
 - Frontend
 keywords:
-updated: 2017-04-16 22:00:00
+updated: 2017-04-16 22:01:00
 ---
 
 ## 简要说明  

@@ -6,7 +6,7 @@ cover: false
 toc: true
 mathjax: false
 reprintPolicy: cc_by_nc_sa
-lang: en
+lang: cn
 comments: true
 date: 2016-09-19 12:00:00
 img: https://res.cloudinary.com/imgcave/image/upload/v1592660290/Img/BlogCover/matlab_bqgy7t.png

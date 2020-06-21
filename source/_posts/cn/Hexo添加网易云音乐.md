@@ -6,19 +6,19 @@ cover: false
 toc: true
 mathjax: false
 reprintPolicy: cc_by_nc_sa
-lang: en
+lang: cn
 comments: true
-date: 2016-12-24 22:00:00
+date: 2016-12-24 22:03:00
 img: https://res.cloudinary.com/imgcave/image/upload/v1592666216/Img/BlogCover/NeteaseMusic_qghpi9.png
 coverImg: https://res.cloudinary.com/imgcave/image/upload/v1592666216/Img/BlogCover/NeteaseMusic_qghpi9.png
 password:
-summary: Hexo博客框架Next主题添加网易云音乐播放器
+summary: Next 主题添加网易云音乐播放器
 categories:
 - Blog
 tags: 
 - Blog
 keywords:
-updated: 2016-12-24 22:00:00
+updated: 2016-12-24 22:03:00
 ---
 
 ## 一 简要介绍  

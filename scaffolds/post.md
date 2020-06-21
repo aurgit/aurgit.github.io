@@ -14,7 +14,7 @@ categories:
 tags:
 keywords:
 reprintPolicy: cc_by_nc_sa
-lang: en
+lang: {{ lang }}
 updated: {{ updated }}
 comments: true
 ---
