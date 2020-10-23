@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "build": "hexo generate",
+    "g": "hexo generate",
     "clean": "hexo clean",
+    "c": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "d": "hexo deploy",
+    "server": "hexo server",
+    "s": "hexo server"
   },
   "hexo": {
     "version": "4.2.1"

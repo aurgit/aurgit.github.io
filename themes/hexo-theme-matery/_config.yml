@@ -135,7 +135,7 @@ socialLink:
   github:  https://github.com/ezhq
   email: ezhq@outlook.com
   facebook: # https://www.facebook.com/xxx
-  twitter: # https://twitter.com/xxx
+  twitter: https://twitter.com/hiezhq
   qq: #xxxxxxxxxx
   weibo: # https://weibo.com/xxx
   zhihu: # https://www.zhihu.com/xxx
@@ -223,6 +223,11 @@ myProjects:
         iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
         url: https://github.com/ezhq/heroplayer
         desc: A Web Media Player by JavaScript.
+    EPGS:
+        icon: fas fa-chart-line
+        iconBackground: 'linear-gradient(to bottom right, #52B4E6 0%, #52B4E6 100%)'
+        url: https://github.com/ezhq/epgs-web
+        desc: A System to recording and help you improve yourself.
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
@@ -264,12 +269,22 @@ myGallery:
     # - /medias/featureimages/0.jpg
     # - /medias/featureimages/1.jpg
     # - /medias/featureimages/2.jpg
+    - https://res.cloudinary.com/imgcave/image/upload/v1603421891/Img/Wallpaper/6A096942-4262-42CD-98FA-C4DE82931143_1_105_c_xo2bnv.jpg
+    - https://res.cloudinary.com/imgcave/image/upload/v1603421884/Img/Wallpaper/CAC5A921-3A95-46A3-8E41-11349259E453_1_105_c_gelr2k.jpg
+    - https://res.cloudinary.com/imgcave/image/upload/v1603421880/Img/Wallpaper/9916BCBF-588E-47B4-A19E-F1C8DEF2F89C_1_105_c_wl5ide.jpg
+    - https://res.cloudinary.com/imgcave/image/upload/v1603421878/Img/Wallpaper/1C707448-F898-4A24-932A-6C746D762CC2_1_105_c_fujidn.jpg
+    - https://res.cloudinary.com/imgcave/image/upload/v1603421875/Img/Wallpaper/2318667D-ADBD-45AD-919B-C9DA46E61503_1_105_c_ydlkqv.jpg
+    - https://res.cloudinary.com/imgcave/image/upload/v1603421873/Img/Wallpaper/E4359922-407E-4EB0-9DCD-E7044B7C809B_1_105_c_blqszp.jpg
+    - https://res.cloudinary.com/imgcave/image/upload/v1603421869/Img/Wallpaper/2775B659-88DA-4C50-890A-59B3FC822A8A_1_105_c_nytt2d.jpg
     - https://res.cloudinary.com/imgcave/image/upload/v1591580479/Img/Wallpaper/NIBJXS26281_ogb221.png
     - https://res.cloudinary.com/imgcave/image/upload/v1591580483/Img/Wallpaper/NIBJCC28091_kortyx.png
     - https://res.cloudinary.com/imgcave/image/upload/v1591580487/Img/Wallpaper/NIBJYHY33261_iv6qdl.png
     - https://res.cloudinary.com/imgcave/image/upload/v1591580494/Img/Wallpaper/BJJS37245_q2n1vb.png
     - https://res.cloudinary.com/imgcave/image/upload/v1591580568/Img/Wallpaper/BJCC42067_dag9yl.png
     - https://res.cloudinary.com/imgcave/image/upload/v1591580492/Img/Wallpaper/BJAP35311_takx1g.png
+    - https://res.cloudinary.com/imgcave/image/upload/v1603421746/Img/Wallpaper/8EB10DA6-2B96-462D-A6C5-7D61268832C8_1_105_c_sgehke.jpg
+    - https://res.cloudinary.com/imgcave/image/upload/v1603421735/Img/Wallpaper/7842E3A8-E6D3-41D2-B493-48ECF09D3F2C_1_105_c_ulhrvm.jpg
+    - https://res.cloudinary.com/imgcave/image/upload/v1603421778/Img/Wallpaper/AF3303C8-A6C2-4848-848D-D75120E77B93_1_105_c_xtz6j5.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
