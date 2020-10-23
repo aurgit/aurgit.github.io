@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="To Alice, ezhq">
+    <meta name="keywords" content="macOS 前端开发环境构建, ezhq">
     <meta name="description" content="ezhq&#39;s club.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>To Alice | Aurdes</title>
+    <title>macOS 前端开发环境构建 | Aurdes</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -247,12 +247,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://res.cloudinary.com/imgcave/image/upload/v1591580479/Img/Wallpaper/NIBJXS26281_ogb221.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://res.cloudinary.com/imgcave/image/upload/v1592747899/Img/BlogCover/JS_gliloe.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">To Alice</h1>
+                    <h1 class="description center-align post-title">macOS 前端开发环境构建</h1>
                 </div>
             </div>
         </div>
@@ -369,8 +369,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Life/">
-                                <span class="chip bg-color">Life</span>
+                            <a href="/tags/Dev/">
+                                <span class="chip bg-color">Dev</span>
+                            </a>
+                        
+                            <a href="/tags/Frontend/">
+                                <span class="chip bg-color">Frontend</span>
                             </a>
                         
                     </div>
@@ -381,8 +385,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Life/" class="post-category">
-                                Life
+                            <a href="/categories/Dev/" class="post-category">
+                                Dev
                             </a>
                         
                     </div>
@@ -394,7 +398,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-06-19
+                    2020-10-23
                 </div>
                 
 
@@ -415,10 +419,131 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>“A human being should be able to change a diaper, plan an invasion, butcher a hog, conn a ship, design a building, write a sonnet, balance accounts, build a wall, set a bone, comfort the dying, take orders, give orders, cooperate, act alone, solve equations, analyze a new problem, pitch manure, program a computer, cook a tasty meal, fight efficiently, die gallantly. Specialization is for insects. ”—Robert A. Heinlein</p>
-</blockquote>
-<script>
+                <h1 id="基本初始信息"><a href="#基本初始信息" class="headerlink" title="基本初始信息"></a>基本初始信息</h1><ul>
+<li>系统版本：macOS Catalina（10.15）</li>
+<li>终端Shell： <code>zsh</code> （已安装 <code>oh my zsh</code> ）</li>
+<li>代理软件 <code>ShadowsocksX-NG</code> 正常工作</li>
+</ul>
+<h1 id="终端代理配置"><a href="#终端代理配置" class="headerlink" title="终端代理配置"></a>终端代理配置</h1><ol>
+<li>通过代理软件查询代理监听代理端口（如：地址为 <code>127.0.0.1</code> ，端口为 <code>1086</code> ）</li>
+<li>在系统 <code>zshrc</code> 配置文件(一般为 <code>private/ect/zshrc</code> )末尾追加如下配置：<pre class="line-numbers language-bash"><code class="language-bash"> <span class="token function">alias</span> proxy<span class="token operator">=</span><span class="token string">"
+     export http_proxy=http://127.0.0.1:1086;
+     export https_proxy=http://127.0.0.1:1086;
+ "</span>
+ <span class="token function">alias</span> unproxy<span class="token operator">=</span><span class="token string">"
+     unproxy='unset all_proxy'
+ "</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li>在系统终端中需要代理时候直接输入 <code>proxy</code> 即可开启代理，需要初始化代理配置时直接运行命令 <code>unproxy</code> 即可。</li>
+</ol>
+<h1 id="Homebrew-安装"><a href="#Homebrew-安装" class="headerlink" title="Homebrew 安装"></a>Homebrew 安装</h1><ol>
+<li>开启终端代理</li>
+<li>运行如下 <code>Homebrew</code> 安装命令：<pre class="line-numbers language-bash"><code class="language-bash">/bin/bash -c <span class="token string">"<span class="token variable"><span class="token variable">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh<span class="token variable">)</span></span>"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ol>
+<h1 id="Git-安装"><a href="#Git-安装" class="headerlink" title="Git 安装"></a>Git 安装</h1><ol>
+<li>终端运行如下命令，通过 Homebrew 安装 Git<pre class="line-numbers language-bash"><code class="language-bash">brew <span class="token function">install</span> <span class="token function">git</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li>重启终端</li>
+</ol>
+<h1 id="NVM-安装"><a href="#NVM-安装" class="headerlink" title="NVM 安装"></a>NVM 安装</h1><ol>
+<li>到 <a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener">NVM 官方 repo</a> 复制安装命令（一般安装位置为 username/.nvm）</li>
+<li>打开终端，执行复制的安装命令</li>
+<li>重启终端即可通过命令 <code>nvm --version</code> 查看 NVM 版本</li>
+</ol>
+<h1 id="Node-js-安装"><a href="#Node-js-安装" class="headerlink" title="Node.js 安装"></a>Node.js 安装</h1><ol>
+<li><p>在终端中通过下面命令安装最新版本 Node.js</p>
+<pre class="line-numbers language-bash"><code class="language-bash">nvm <span class="token function">install</span> node<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>在终端中通过下面命令安装 LTS 版本 Node.js</p>
+<pre class="line-numbers language-bash"><code class="language-bash">nvm <span class="token function">install</span> --lts<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>查询目前安装的 Node.js 版本，及当前使用的版本</p>
+<pre class="line-numbers language-bash"><code class="language-bash">nvm <span class="token function">ls</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>修正当前 Node.js 使用版本为最新版（下方代码中最新版为刚刚安装的 v15.0.0 版）</p>
+<pre class="line-numbers language-bash"><code class="language-bash">nvm use v15.0.0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ol>
+<h1 id="配置本地-Git-多账户"><a href="#配置本地-Git-多账户" class="headerlink" title="配置本地 Git 多账户"></a>配置本地 Git 多账户</h1><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><ol>
+<li><p>先查询是否已经配置全局账户信息</p>
+<pre class="line-numbers language-bash"><code class="language-bash"> <span class="token function">git</span> config --global user.name
+ <span class="token function">git</span> config --global user.email<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>若有配置查询结果，则需要清除已有配置</p>
+<pre class="line-numbers language-bash"><code class="language-bash"> <span class="token function">git</span> config --global --unset user.name
+ <span class="token function">git</span> config --global --unset user.email<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>判断本地是否存在默认 .ssh 文件</p>
+<pre class="line-numbers language-bash"><code class="language-bash"> <span class="token function">cd</span> ~/.ssh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p> 若提示没有此文件或目录，则通过下述命令生成该目录及相关文件（命令执行过程中的配置询问可会车使用认值）</p>
+<pre class="line-numbers language-bash"><code class="language-bash"> ssh-keygen<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p> 这样即在 <code>username/</code> 文件夹下创建 <code>.ssh</code> 隐藏目录</p>
+</li>
+</ol>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><ol>
+<li><p>进入 <code>.ssh</code> 目录</p>
+<pre class="line-numbers language-bash"><code class="language-bash"> <span class="token function">cd</span> ~/.ssh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>根据账户邮箱生成密钥</p>
+<pre class="line-numbers language-bash"><code class="language-bash"> ssh-keygen -t rsa -C <span class="token string">"email@email.com"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p> 备注：配置过程中考虑到多账户因素，可自定义密钥名，如 <code>github_yourname_rsa</code> 等形式；其他自定义可采用默认配置。</p>
+</li>
+<li><p>重复步骤1～步骤2，将多个账户的密钥依次生成</p>
+</li>
+<li><p>将上述步骤生成的密钥<strong>逐个</strong>在本地启用</p>
+<pre class="line-numbers language-bash"><code class="language-bash"> ssh-add ~/.ssh/github_yourname_rsa<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p> 备注：执行命令后出现 <code>Identity added: /Users/.....</code> 为本地密钥启用成功</p>
+</li>
+<li><p>设置本地密钥配置文件</p>
+<ol>
+<li><p>在目录 <code>user/username/.ssh</code> 下创建文件 <code>config</code> ，也可直接通过下述命令创建：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">  <span class="token function">cd</span> ~/.ssh
+  <span class="token function">touch</span> config<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>编辑 <code>config</code> 文件，按照下列格式，逐个添加账户配置，并保存</p>
+<pre class="line-numbers language-bash"><code class="language-bash">  Host yourname
+      HostName github.com
+      PreferredAuthentications publickey
+      User Git
+      IdentityFile ~/.ssh/github_****_rsa<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>  备忘：个别字段说明</p>
+<ul>
+<li>Host: 自定义昵称，唯一，便于后续通过这个自定义昵称匹配对应密钥</li>
+<li>HostName: 域名，Git 账号网站域名</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>分别将步骤 1～3 中生成的<strong>公钥文件内容（<code>github_yourname_rsa.pub</code>，一定要 <code>.pub</code> 结尾的文件）</strong>粘贴到对应到平台账号设置中。</p>
+</li>
+</ol>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><ol>
+<li>通过以下命令测试是否配置成功，<code>yourHost</code> 指配置步骤 5.2 中的 <code>Host</code> 字段<pre class="line-numbers language-bash"><code class="language-bash"> <span class="token function">ssh</span> -T yourHost<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ 备注：若结果为 <code>Hi &lt;yourname&gt;! You've ...... , but GitHub does not provide shell access.</code> 即为配置成功。</li>
+</ol>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ol>
+<li><p>后续执行 <code>git clone</code> 命令时需要进行以下变化(以往使用第一条命令，现在配置多账户后，通过第二条命令形式执行命令，即把 <code>github.com</code> 替换为配置文件中配置对应的 <code>Host</code> 字段值，不包括尖引号 <code>&lt;</code> 和 <code>&gt;</code>)</p>
+<pre class="line-numbers language-bash"><code class="language-bash"> <span class="token comment" spellcheck="true"># Past</span>
+ <span class="token function">git</span> clone git@github.com:yourname/whatever.git
+
+ <span class="token comment" spellcheck="true"># Now</span>
+ <span class="token function">git</span> clone git@<span class="token operator">&lt;</span>yourHostValue<span class="token operator">></span>:yourname/whatever.git<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>后续建议 <code>git clone</code> 代码之后尽早设定编辑此代码的<strong>账户</strong>和<strong>分支</strong>，避免提交代码时才发现是使用默认全局 Git 账户或主分支进行的代码更改。下面代码为示例代码：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"> <span class="token function">git</span> clone git@alice:alice/whatever.git
+ <span class="token function">cd</span> whatever
+ <span class="token function">git</span> config user.name <span class="token string">"alice"</span>
+ <span class="token function">git</span> config suer.email <span class="token string">"alice@email.com"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>若同时使用博客框架 Hexo，则有以下地方需要修改</p>
+<ol>
+<li>博客配置文件 <code>_config.yml</code> 中 <code>deploy</code> 内容下的 <code>respository</code> 字段值要做相应改变（由 <code>respository: git@github.com:......</code> 改为 <code>git@alice:......</code>）。</li>
+<li>博客项目 Git 文件 <code>.git/config</code> 中，<code>remote "origin"</code>  部分 <code>url</code> 字段值要改为 <code>url = git@alice:......</code> 。</li>
+</ol>
+</li>
+</ol>
+<h1 id="Yarn"><a href="#Yarn" class="headerlink" title="Yarn"></a>Yarn</h1><h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><h1 id="VSCode"><a href="#VSCode" class="headerlink" title="VSCode"></a>VSCode</h1><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -461,7 +586,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://aurdes.com/en/2020060144/">https://aurdes.com/en/2020060144/</a>
+                    <a href="https://aurdes.com/cn/2020101100/">https://aurdes.com/cn/2020101100/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -499,8 +624,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Life/">
-                                    <span class="chip bg-color">Life</span>
+                                <a href="/tags/Dev/">
+                                    <span class="chip bg-color">Dev</span>
+                                </a>
+                            
+                                <a href="/tags/Frontend/">
+                                    <span class="chip bg-color">Frontend</span>
                                 </a>
                             
                         </div>
@@ -668,9 +797,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/cn/2020101100/">
                     <div class="card-image">
@@ -687,9 +817,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -702,6 +832,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -724,30 +855,30 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/cn/2020021200/">
+                <a href="/en/2020060144/">
                     <div class="card-image">
                         
-                        <img src="https://res.cloudinary.com/imgcave/image/upload/v1592747899/Img/BlogCover/JS_gliloe.png" class="responsive-img" alt="JavaScript 高级程序设计">
+                        <img src="https://res.cloudinary.com/imgcave/image/upload/v1591580479/Img/Wallpaper/NIBJXS26281_ogb221.png" class="responsive-img" alt="To Alice">
                         
-                        <span class="card-title">JavaScript 高级程序设计</span>
+                        <span class="card-title">To Alice</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            《JavaScript高级程序设计》
+                            Live your info.
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-19
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Read/" class="post-category">
-                                    Read
+                            <a href="/categories/Life/" class="post-category">
+                                    Life
                                 </a>
                             
                             
@@ -757,16 +888,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Read/">
-                        <span class="chip bg-color">Read</span>
-                    </a>
-                    
-                    <a href="/tags/Frontend/">
-                        <span class="chip bg-color">Frontend</span>
-                    </a>
-                    
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/Life/">
+                        <span class="chip bg-color">Life</span>
                     </a>
                     
                 </div>
