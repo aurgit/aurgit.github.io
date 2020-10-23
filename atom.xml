@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Aurdes</title>
+  
+  <subtitle>Live your info.</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://aurdes.com/"/>
+  <updated>2020-06-18T17:44:10.000Z</updated>
+  <id>https://aurdes.com/</id>
+  
+  <author>
+    <name>ezhq</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>To Alice</title>
+    <link href="https://aurdes.com/en/2020060144/"/>
+    <id>https://aurdes.com/en/2020060144/</id>
+    <published>2020-06-18T17:44:06.000Z</published>
+    <updated>2020-06-18T17:44:10.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;“A human being should be able to change a diaper, plan an invasion, butcher a hog, conn a ship, design a building, write a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="https://aurdes.com/categories/Life/"/>
+    
+    
+      <category term="Life" scheme="https://aurdes.com/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 高级程序设计</title>
+    <link href="https://aurdes.com/cn/2020021200/"/>
+    <id>https://aurdes.com/cn/2020021200/</id>
+    <published>2020-02-10T04:00:00.000Z</published>
+    <updated>2020-02-10T04:00:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1-JavaScript-简介&quot;&gt;&lt;a href=&quot;#1-JavaScript-简介&quot; class=&quot;headerlink&quot; title=&quot;1. JavaScript 简介&quot;&gt;&lt;/a&gt;1. JavaScript 简介&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Read" scheme="https://aurdes.com/categories/Read/"/>
+    
+    
+      <category term="Read" scheme="https://aurdes.com/tags/Read/"/>
+    
+      <category term="Frontend" scheme="https://aurdes.com/tags/Frontend/"/>
+    
+      <category term="JavaScript" scheme="https://aurdes.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git Guide</title>
+    <link href="https://aurdes.com/cn/2019101204/"/>
+    <id>https://aurdes.com/cn/2019101204/</id>
+    <published>2019-10-22T04:04:00.000Z</published>
+    <updated>2020-03-02T04:04:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;基础命令&quot;&gt;&lt;a href=&quot;#基础命令&quot; class=&quot;headerlink&quot; title=&quot;基础命令&quot;&gt;&lt;/a&gt;基础命令&lt;/h1&gt;&lt;h2 id=&quot;克隆&quot;&gt;&lt;a href=&quot;#克隆&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Dev" scheme="https://aurdes.com/categories/Dev/"/>
+    
+    
+      <category term="Dev" scheme="https://aurdes.com/tags/Dev/"/>
+    
+      <category term="Git" scheme="https://aurdes.com/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flask Web Dev</title>
+    <link href="https://aurdes.com/cn/2018062205/"/>
+    <id>https://aurdes.com/cn/2018062205/</id>
+    <published>2018-06-16T14:05:00.000Z</published>
+    <updated>2018-06-17T14:05:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;第一章：安装&quot;&gt;&lt;a href=&quot;#第一章：安装&quot; class=&quot;headerlink&quot; title=&quot;第一章：安装&quot;&gt;&lt;/a&gt;第一章：安装&lt;/h1&gt;&lt;h2 id=&quot;1-1-安装Flask&quot;&gt;&lt;a href=&quot;#1-1-安装Flask&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Read" scheme="https://aurdes.com/categories/Read/"/>
+    
+    
+      <category term="Dev" scheme="https://aurdes.com/tags/Dev/"/>
+    
+      <category term="Read" scheme="https://aurdes.com/tags/Read/"/>
+    
+      <category term="Python" scheme="https://aurdes.com/tags/Python/"/>
+    
+      <category term="Flask" scheme="https://aurdes.com/tags/Flask/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML与CSS基础课程学习笔记</title>
+    <link href="https://aurdes.com/cn/2017102202/"/>
+    <id>https://aurdes.com/cn/2017102202/</id>
+    <published>2017-10-18T14:02:00.000Z</published>
+    <updated>2017-10-18T14:02:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;备注&quot;&gt;&lt;a href=&quot;#备注&quot; class=&quot;headerlink&quot; title=&quot;备注&quot;&gt;&lt;/a&gt;备注&lt;/h1&gt;&lt;h2 id=&quot;预备知识&quot;&gt;&lt;a href=&quot;#预备知识&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Dev" scheme="https://aurdes.com/categories/Dev/"/>
+    
+    
+      <category term="Dev" scheme="https://aurdes.com/tags/Dev/"/>
+    
+      <category term="Frontend" scheme="https://aurdes.com/tags/Frontend/"/>
+    
+      <category term="HTML" scheme="https://aurdes.com/tags/HTML/"/>
+    
+      <category term="CSS" scheme="https://aurdes.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CMD获取历史WiFi名称和密码</title>
+    <link href="https://aurdes.com/cn/2017081006/"/>
+    <id>https://aurdes.com/cn/2017081006/</id>
+    <published>2017-08-04T02:06:00.000Z</published>
+    <updated>2017-08-04T02:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;按下组合键 &lt;code&gt;Win + R&lt;/code&gt;   &lt;/li&gt;
+&lt;li&gt;在打开的窗口中输入 &lt;code&gt;cmd&lt;/code&gt; 并回车  &lt;/li&gt;
+&lt;li&gt;将下列代码复制粘贴到打开的黑色背景的窗口中并回车即可  &lt;pre
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="https://aurdes.com/categories/Life/"/>
+    
+    
+      <category term="Life" scheme="https://aurdes.com/tags/Life/"/>
+    
+      <category term="Terminal" scheme="https://aurdes.com/tags/Terminal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面向零基础新手的C#基础知识</title>
+    <link href="https://aurdes.com/cn/2017071812/"/>
+    <id>https://aurdes.com/cn/2017071812/</id>
+    <published>2017-07-08T10:12:00.000Z</published>
+    <updated>2017-08-06T10:12:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;备注：此课程为C#入门课程，作为UWP开发入门课程的先修基础课程。 &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;第一讲-课程介绍&quot;&gt;&lt;a href=&quot;#第一讲-课程介绍&quot; class=&quot;headerlink&quot; title=&quot;第一讲
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Dev" scheme="https://aurdes.com/categories/Dev/"/>
+    
+    
+      <category term="Dev" scheme="https://aurdes.com/tags/Dev/"/>
+    
+      <category term="C#" scheme="https://aurdes.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MDN《学习Web开发》教程中网站提交的补充</title>
+    <link href="https://aurdes.com/cn/2017042201/"/>
+    <id>https://aurdes.com/cn/2017042201/</id>
+    <published>2017-04-16T14:01:00.000Z</published>
+    <updated>2017-04-16T14:01:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;简要说明&quot;&gt;&lt;a href=&quot;#简要说明&quot; class=&quot;headerlink&quot; title=&quot;简要说明&quot;&gt;&lt;/a&gt;简要说明&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;这篇博客是关于 MDN &amp;gt; 学习Web开发 &amp;gt; Web开发入门 &amp;gt; 发布网站
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Dev" scheme="https://aurdes.com/categories/Dev/"/>
+    
+    
+      <category term="Dev" scheme="https://aurdes.com/tags/Dev/"/>
+    
+      <category term="Git" scheme="https://aurdes.com/tags/Git/"/>
+    
+      <category term="Frontend" scheme="https://aurdes.com/tags/Frontend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo添加网易云音乐</title>
+    <link href="https://aurdes.com/cn/2016122203/"/>
+    <id>https://aurdes.com/cn/2016122203/</id>
+    <published>2016-12-24T14:03:00.000Z</published>
+    <updated>2016-12-24T14:03:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一-简要介绍&quot;&gt;&lt;a href=&quot;#一-简要介绍&quot; class=&quot;headerlink&quot; title=&quot;一 简要介绍&quot;&gt;&lt;/a&gt;一
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Blog" scheme="https://aurdes.com/categories/Blog/"/>
+    
+    
+      <category term="Blog" scheme="https://aurdes.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino Workshop</title>
+    <link href="https://aurdes.com/cn/2016112208/"/>
+    <id>https://aurdes.com/cn/2016112208/</id>
+    <published>2016-11-22T14:08:00.000Z</published>
+    <updated>2016-11-22T14:08:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一-起步&quot;&gt;&lt;a href=&quot;#一-起步&quot; class=&quot;headerlink&quot; title=&quot;一 起步&quot;&gt;&lt;/a&gt;一 起步&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;章节内容&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;简要介绍 Arduino 能做什么以及一些作品 
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Read" scheme="https://aurdes.com/categories/Read/"/>
+    
+    
+      <category term="Dev" scheme="https://aurdes.com/tags/Dev/"/>
+    
+      <category term="Arduino" scheme="https://aurdes.com/tags/Arduino/"/>
+    
+      <category term="Read" scheme="https://aurdes.com/tags/Read/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows系统Hosts修改</title>
+    <link href="https://aurdes.com/cn/2016111730/"/>
+    <id>https://aurdes.com/cn/2016111730/</id>
+    <published>2016-11-11T09:30:00.000Z</published>
+    <updated>2016-11-11T09:30:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;提示&quot;&gt;&lt;a href=&quot;#提示&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="https://aurdes.com/categories/Life/"/>
+    
+    
+      <category term="Life" scheme="https://aurdes.com/tags/Life/"/>
+    
+      <category term="OS" scheme="https://aurdes.com/tags/OS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C Primer Plus 5th</title>
+    <link href="https://aurdes.com/cn/2016102207/"/>
+    <id>https://aurdes.com/cn/2016102207/</id>
+    <published>2016-10-22T14:07:00.000Z</published>
+    <updated>2016-10-22T14:07:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;第一章-初识C语言&quot;&gt;&lt;a href=&quot;#第一章-初识C语言&quot; class=&quot;headerlink&quot; title=&quot;第一章 初识C语言&quot;&gt;&lt;/a&gt;第一章 初识C语言&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;章节内容&lt;/strong&gt; 
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Read" scheme="https://aurdes.com/categories/Read/"/>
+    
+    
+      <category term="Dev" scheme="https://aurdes.com/tags/Dev/"/>
+    
+      <category term="Read" scheme="https://aurdes.com/tags/Read/"/>
+    
+      <category term="C" scheme="https://aurdes.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>联系的讨好</title>
+    <link href="https://aurdes.com/cn/2016102213/"/>
+    <id>https://aurdes.com/cn/2016102213/</id>
+    <published>2016-10-16T14:13:00.000Z</published>
+    <updated>2016-10-16T14:13:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;一切烦恼&lt;br&gt;源于越来越多的“联系”&lt;br&gt;拥有了紧跟潮流的“聊天工具”&lt;br&gt;失去的是以往倍感珍惜的共同时间&lt;br&gt;得到了随时发送的机会，&lt;br&gt;藐视了言语力量的摧残；&lt;br&gt;得到了越来越多的途经，&lt;br&gt;丧失了逐渐稀有的认真。&lt;br&gt;随风而逝的，&lt;br&gt;是时间、&lt;br
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="https://aurdes.com/categories/Life/"/>
+    
+    
+      <category term="Life" scheme="https://aurdes.com/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>音乐如生活</title>
+    <link href="https://aurdes.com/cn/2016102209/"/>
+    <id>https://aurdes.com/cn/2016102209/</id>
+    <published>2016-10-11T14:09:00.000Z</published>
+    <updated>2016-10-11T14:09:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;某种程度上&lt;br&gt;音乐颇具私人性质&lt;br&gt;没有不好听的音乐&lt;br&gt;只有不爱听的音乐  &lt;/p&gt;
+&lt;p&gt;听音乐的快餐化、浅显化&lt;br&gt;使得每个人都成了&lt;br&gt;“音乐评论人” 
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="https://aurdes.com/categories/Life/"/>
+    
+    
+      <category term="Life" scheme="https://aurdes.com/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MATLAB 闰年判断与闰年输出</title>
+    <link href="https://aurdes.com/cn/2016091200/"/>
+    <id>https://aurdes.com/cn/2016091200/</id>
+    <published>2016-09-19T04:00:00.000Z</published>
+    <updated>2017-03-09T04:00:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h3&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Dev" scheme="https://aurdes.com/categories/Dev/"/>
+    
+    
+      <category term="Dev" scheme="https://aurdes.com/tags/Dev/"/>
+    
+      <category term="MATLAB" scheme="https://aurdes.com/tags/MATLAB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三维作品 2016</title>
+    <link href="https://aurdes.com/cn/2016082210/"/>
+    <id>https://aurdes.com/cn/2016082210/</id>
+    <published>2016-08-31T14:10:00.000Z</published>
+    <updated>2016-08-31T14:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;棋局斑马球·棋局未定，世事无常&quot;&gt;&lt;a href=&quot;#棋局斑马球·棋局未定，世事无常&quot; class=&quot;headerlink&quot; title=&quot;棋局斑马球·棋局未定，世事无常&quot;&gt;&lt;/a&gt;棋局斑马球·棋局未定，世事无常&lt;/h1&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="3D" scheme="https://aurdes.com/categories/3D/"/>
+    
+    
+      <category term="3D" scheme="https://aurdes.com/tags/3D/"/>
+    
+      <category term="C4D" scheme="https://aurdes.com/tags/C4D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一笔</title>
+    <link href="https://aurdes.com/cn/2016081304/"/>
+    <id>https://aurdes.com/cn/2016081304/</id>
+    <published>2016-08-16T05:04:00.000Z</published>
+    <updated>2016-08-16T05:04:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;千山万岭独行，&lt;br&gt;千军万马不惊，&lt;br&gt;千招万式精炼，&lt;br&gt;千万事件小灵。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+    
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="https://aurdes.com/categories/Life/"/>
+    
+    
+      <category term="Life" scheme="https://aurdes.com/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你是否错过世界的精彩</title>
+    <link href="https://aurdes.com/cn/2013011211/"/>
+    <id>https://aurdes.com/cn/2013011211/</id>
+    <published>2013-01-03T04:11:00.000Z</published>
+    <updated>2013-01-03T04:11:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;你是否跟丹麦网友报名参加同一个在线公益活动？你是否跟印度网友讨论某一热门视频？你是否早早成为各国总统的微博粉丝？你是否为了国际化的工作机会而精心经营你的英文职业人脉主页？你是否关注过坦桑尼亚摄影家的图片社交账号？&lt;/p&gt;
+&lt;p&gt;好吧，当你身处和他们不一样的世界，你仍然可以觉
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Read" scheme="https://aurdes.com/categories/Read/"/>
+    
+    
+      <category term="Read" scheme="https://aurdes.com/tags/Read/"/>
+    
+      <category term="南风窗" scheme="https://aurdes.com/tags/%E5%8D%97%E9%A3%8E%E7%AA%97/"/>
+    
+  </entry>
+  
+</feed>

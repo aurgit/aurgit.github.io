@@ -1,0 +1,1407 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="C Primer Plus 5th, ezhq">
+    <meta name="description" content="ezhq&#39;s club.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>C Primer Plus 5th | Aurdes</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="Aurdes" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Aurdes</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>Contact</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Aurdes</div>
+        <div class="logo-desc">
+            
+            ezhq&#39;s club.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			Contact
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://res.cloudinary.com/imgcave/image/upload/v1592707656/Img/BlogCover/CPrimerPlus_jjwskl.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">C Primer Plus 5th</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Dev/">
+                                <span class="chip bg-color">Dev</span>
+                            </a>
+                        
+                            <a href="/tags/Read/">
+                                <span class="chip bg-color">Read</span>
+                            </a>
+                        
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Read/" class="post-category">
+                                Read
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2016-10-22
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="第一章-初识C语言"><a href="#第一章-初识C语言" class="headerlink" title="第一章 初识C语言"></a>第一章 初识C语言</h2><p><strong>章节内容</strong>  </p>
+<ul>
+<li>C的历史和特性  </li>
+<li>编写程序所需的步骤  </li>
+<li>关于编译器和链接器的一些知识  </li>
+<li>C的标准  </li>
+</ul>
+<h3 id="1-1-C语言的起源"><a href="#1-1-C语言的起源" class="headerlink" title="1.1 C语言的起源"></a>1.1 C语言的起源</h3><ul>
+<li>编程语言的目标具有一定的参考意义，可以明白为何采用它。  </li>
+</ul>
+<h3 id="1-2-使用C语言的理由"><a href="#1-2-使用C语言的理由" class="headerlink" title="1.2 使用C语言的理由"></a>1.2 使用C语言的理由</h3><ul>
+<li>C语言的特性：控制结构、快速、紧凑、可移植、自由度高。  </li>
+</ul>
+<h3 id="1-3-C语言的应用范围"><a href="#1-3-C语言的应用范围" class="headerlink" title="1.3 C语言的应用范围"></a>1.3 C语言的应用范围</h3><h3 id="1-4-计算机能做什么"><a href="#1-4-计算机能做什么" class="headerlink" title="1.4 计算机能做什么"></a>1.4 计算机能做什么</h3><ul>
+<li><strong>计算机基本组成</strong><br>中央处理单元CPU（Central Processing Unit）：负责绝大多数计算机的计算工作。<br>随机访问存储器RAM（Random Access Memory）：保存运行的程序和文件，与CPU直接诶交换数据。<br>永久存储器：保存计算机数据。<br>外围设备：键盘、鼠标、显示器等等，提供人与计算机的交互通信。  </li>
+<li><em>编译器*</em><br>表层过程中高级指令可以使编程者更加便捷的表达，但计算机不易理解这些指令。编译器将高级语言程序解释为计算机需要的详细的低级程序指令，使得编程者可以自在思考并表达想法，并将想法写成的高级语言指令翻译为供计算机执行的一系列低级命令。编译器还可以将一份程序转换为适应各种不同机器的指令，使得编程只需一次。  </li>
+</ul>
+<h3 id="1-5-高级计算机语言和编译器"><a href="#1-5-高级计算机语言和编译器" class="headerlink" title="1.5 高级计算机语言和编译器"></a>1.5 高级计算机语言和编译器</h3><h3 id="1-6-语言标准"><a href="#1-6-语言标准" class="headerlink" title="1.6 语言标准"></a>1.6 语言标准</h3><h3 id="1-7-使用C语言的7个步骤"><a href="#1-7-使用C语言的7个步骤" class="headerlink" title="1.7 使用C语言的7个步骤"></a>1.7 使用C语言的7个步骤</h3><ul>
+<li>步骤并非是从初到末的，而是循环往复或不断变化的。编程步骤1、2比较重要，不能忽视。编写代码应尽量先进行规划，这将节省不少后续时间。  </li>
+</ul>
+<ol>
+<li>定义程序目标<br>明确编程目标，对程序完成的事情有概念性的认识：希望通过编程对计算机提供什么资料，计算机需要进行何种处理，计算机输出什么结果。在此阶段不需要考虑具体的程序语法和程序代码。  </li>
+<li>设计程序<br>思考程序矩体实现方法，呈现方式，预估程序编写时间。编写伪代码。  </li>
+<li>编写代码<br>编写代码。注意编程规范性，适当添加注释。  </li>
+<li>编译<br>运行编译器，将代码进行编译操作，并进行错误改正以及代码改善。  </li>
+<li>运行程序<br>对编译通过的程序进行运行。  </li>
+<li>测试和调试程序<br>对程序进行多种情况下的测试，尽可能发现程序缺陷或错误（Bug）检查程序是否能正常运行并达到预期目标。对错误情况进行调试（Debugging）。  </li>
+<li>维护和修改程序<br>对程序后期使用进行故障修复、功能改善、功能添加等操作。  </li>
+</ol>
+<h3 id="1-8-编程机制"><a href="#1-8-编程机制" class="headerlink" title="1.8 编程机制"></a>1.8 编程机制</h3><ul>
+<li><p>文件名组成：基本名.扩展名  </p>
+</li>
+<li><p><strong>编译器与链接器</strong><br>C编程编写的源代码需要转换为可执行文件（机器语言代码）后才能运行，分两部来完成：编译和链接，分别用到编译器和链接器。  </p>
+</li>
+<li><p><em>编译器*</em>：将编写的各个源代码文件转换为中间代码（此时还不是最终执行的机器代码，仅仅是自己编写的代码相对应的机器代码，也称为目标代码），供后续链接器使用。  </p>
+</li>
+<li><p><em>链接器*</em>：将目标代码、系统标准启动代码、程序运行需要的库代码三者结合为一个可执行文件。  </p>
+</li>
+<li><p><em>启动代码*</em>：启动代码作用为连接操作系统与程序之间的接口。将程序需要的操作与操作系统用于实现相关功能的接口对应起来。  </p>
+</li>
+<li><p><em>库代码*</em>：一些基本或高频的C代码并不需要自己编写去实现，C程序库中自带一些相关代码，在程序中直接通过一些短指令来引用。引用语句并不能被机器直接运行，需要链接器在后期从C库中调出相关短指令代表的命令代码，并将短指令替换。</p>
+</li>
+</ul>
+<p><img src="https://res.cloudinary.com/imgcave/image/upload/v1592707827/Img/BlogCover/1_1_bianyiqi_n4saur.jpg" alt="编译器和链接器"> </p>
+<ul>
+<li><p>源代码文件应该是文本文件，不是字处理文件（字处理文件类似于word文件，除了文件本身包含的文字外，还包含许多字体颜色和格式等信息，不是纯文本文件）。</p>
+</li>
+<li><p>实际编程中易出现的一个问题：程序运行窗口在程序命令运行完之后瞬间消失。<br>解决方法：在程序命令里的return语句之前添加如下一行代码</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token function">getchar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>该命令作用为读取一次键盘按键输入，效果为程序运行到此处时候只有按下回车键（Enter键）才继续运行。假若程序中此处已经有需要输入内容并等待回车的命令，则可以连续两次使用该代码</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token function">getchar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token function">getchar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>该重复一次的代码段意为先根据第一次按下的回车键来读取输入的数据，然后按第二行命令等待按下回车键来继续运行程序。（对于入门者此处无需过于理解，入门后自然明白）。  </p>
+</li>
+</ul>
+<h3 id="1-9-本书的组织结构"><a href="#1-9-本书的组织结构" class="headerlink" title="1.9 本书的组织结构"></a>1.9 本书的组织结构</h3><h3 id="1-10-本书的约定"><a href="#1-10-本书的约定" class="headerlink" title="1.10 本书的约定"></a>1.10 本书的约定</h3><h3 id="1-11-本章小结"><a href="#1-11-本章小结" class="headerlink" title="1.11 本章小结"></a>1.11 本章小结</h3><h3 id="1-12-复习题"><a href="#1-12-复习题" class="headerlink" title="1.12 复习题"></a>1.12 复习题</h3><ol>
+<li><p><strong>就编程而言，可移植性表示什么？</strong><br>一个程序的可移植性好，就是指它的源代码不经修改就可以在多种不同的计算机系统上编译成可以成功运行的程序。  </p>
+</li>
+<li><p><strong>解释源代码文件、目标代码文件和可执行文件之间的区别。</strong><br>源代码文件中包含着程序员使用任何语言编写的代码。<br>目标代码文件包含着机器语言代码，它并不需要是完整的程序代码。<br>可执行文件包含着组成可执行程序的全部机器语言代码。  </p>
+</li>
+<li><p><strong>编程的7个主要步骤是什么？</strong><br>a.定义程序目标;<br>b.编写程序代码;<br>c.编写程序代码;<br>d.编译程序;<br>e.运行程序;<br>f.测试和调试程序;<br>g.维护和修改程序;  </p>
+</li>
+<li><p><strong>编译器的任务是什么？</strong><br>编译器把源代码（例如，用C语言写成的代码）转换成机器语言代码，也称对象代码。  </p>
+</li>
+<li><p><strong>链接器的任务是什么？</strong><br>链接器把多个来源（例如，已编译的的源代码、库代码和启动代码）的目标代码连接成一个单独的可执行程序。  </p>
+</li>
+</ol>
+<h3 id="1-13-编程练习"><a href="#1-13-编程练习" class="headerlink" title="1.13 编程练习"></a>1.13 编程练习</h3><ol>
+<li>您刚刚被MacroMuscle有限公司（Software for Hard Bodies）聘用。该公司要进入欧洲市场，需要一个将英寸转换为厘米（1英寸=2.54cm）的程序。他们希望建立的该程序可提示用户输入英寸值。您的任务是定义程序目标并设计该程序（编程过程的第1步和第2步）。</li>
+</ol>
+<h2 id="第二章-C语言概述"><a href="#第二章-C语言概述" class="headerlink" title="第二章 C语言概述"></a>第二章 C语言概述</h2><p><strong>章节内容</strong>    </p>
+<ul>
+<li>运算符=  </li>
+<li>函数：main()、printf()  </li>
+<li>编写一个简单的C程序  </li>
+<li>创建整型变量，为其赋值，并在屏幕上显示该值  </li>
+<li>换行字符  </li>
+<li>如何在程序中加入注释，建立包含多个函数的程序，以及造出程序中的错误  </li>
+<li>理解什么是关键字  </li>
+</ul>
+<h3 id="2-1-简单的C程序示例"><a href="#2-1-简单的C程序示例" class="headerlink" title="2.1 简单的C程序示例"></a>2.1 简单的C程序示例</h3><ul>
+<li><p>经典程序例子及解析  </p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
+<span class="token keyword">int</span> <span class="token function">main</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>            <span class="token comment" spellcheck="true">//简单C程序例子</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">int</span> num<span class="token punctuation">;</span>            <span class="token comment" spellcheck="true">//定义名为num的一个变量</span>
+  num <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>            <span class="token comment" spellcheck="true">//将num赋值为1</span>
+
+  <span class="token function">printf</span> <span class="token punctuation">(</span><span class="token string">"I am a simple "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">//使用函数printf()输出内容</span>
+  <span class="token function">printf</span> <span class="token punctuation">(</span><span class="token string">"computer.\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">printf</span> <span class="token punctuation">(</span><span class="token string">"My favorite number is %d because it is first.\n"</span><span class="token punctuation">,</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-2-示例解释"><a href="#2-2-示例解释" class="headerlink" title="2.2 示例解释"></a>2.2 示例解释</h3></li>
+<li><p>C程序的各个部分及简要介绍<br><img src="https://res.cloudinary.com/imgcave/image/upload/v1592715767/Img/BlogCover/2_1_Cjiegou_ecabxn.jpg" alt="C程序结构图解"></p>
+</li>
+<li><p>告诉编译器编译时包含stdio.h文件的所有内容（此文件对一些C语言的基本功能如输入接受和输出显示提供支持，这些功能的实现并不需要自己亲自编写）。</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span>  </span><span class="token comment" spellcheck="true">//包含另一个文件</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>对函数进行定义，C语言包含至少一个函数，上面的函数为其中比较基本的函数。格式：int是函数类型（函数有多种不同的类型，此处为整数类型函数。）；main()是函数的名字；main()括号中的void为函数接收值（函数运行时可以接受特定输入，void代表此函数不需要输入值。）</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">//函数名</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>这是注释，注释的作用是对代码做一定说明，对于机器没有任何意义，在编译的时候也会被机器全部忽略，只是为了日后查看代码或他人阅读代码的时候容易理解而建立。注释有两种，一种为行注释，一种为块注释。行注释用于简短的，一行或一行不到的注释使用，可以放在任意位置，在一行中，双斜线之后的所有内容均被认为是注释。对于块注释，结构由/<em>和</em>/组成，两者之间的所有内容无论几行，都被认为是注释。第二段代码为两种注释的例子(块注释代码显示效果有问题，代码是正确的)。</p>
+<pre class="line-numbers language-c"><code class="language-c">  <span class="token comment" spellcheck="true">// 简单C程序例子</span>
+  <span class="token comment" spellcheck="true">//行注释</span>
+  <span class="token comment" spellcheck="true">/*
+  块注释
+  */</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<h3 id="2-3-简单程序的结构"><a href="#2-3-简单程序的结构" class="headerlink" title="2.3 简单程序的结构"></a>2.3 简单程序的结构</h3><h3 id="2-4-提高程序可读性的技巧"><a href="#2-4-提高程序可读性的技巧" class="headerlink" title="2.4 提高程序可读性的技巧"></a>2.4 提高程序可读性的技巧</h3><h3 id="2-5-进一步使用C"><a href="#2-5-进一步使用C" class="headerlink" title="2.5 进一步使用C"></a>2.5 进一步使用C</h3><h3 id="2-6-多个函数"><a href="#2-6-多个函数" class="headerlink" title="2.6 多个函数"></a>2.6 多个函数</h3><h3 id="2-7-调试程序"><a href="#2-7-调试程序" class="headerlink" title="2.7 调试程序"></a>2.7 调试程序</h3><ul>
+<li>对于编译器给出的错误提示，不必全部更改后再运行，可以先修改为首的几个，尝试运行后再决定是否继续修改。  </li>
+<li>编译器给出的错误位置一般要比真正的错误位置滞后一行。  </li>
+<li>编译器基本无法检测出语义错误。  </li>
+<li>可以通过在关键点处加入而外的printf()语句来查找语句错误，解决错误之后再删除相关测试用printf()语句。  </li>
+<li>把关键字或保留标识符用作变量名将会引起编译器报错。  </li>
+</ul>
+<h3 id="2-11-复习题"><a href="#2-11-复习题" class="headerlink" title="2.11 复习题"></a>2.11 复习题</h3><ol>
+<li>如何称呼C程序的基本模块？  </li>
+</ol>
+<ol start="2">
+<li><p>什么是语法错误？给出它的一个英语例子和C语言例子。  </p>
+</li>
+<li><p>什么是语义错误？给出它的一个英语例子和一个C语言例子。  </p>
+</li>
+<li><p>Indiana Sloth已经编好了下面的程序，并想征求您的意见。请帮助他评定。</p>
+<pre class="line-numbers language-c"><code class="language-c"> include studio<span class="token punctuation">.</span>h
+ <span class="token keyword">int</span> main<span class="token punctuation">{</span><span class="token keyword">void</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">*</span> 改程序可显示出一年中有多少周 <span class="token operator">/</span><span class="token operator">*</span>
+ <span class="token punctuation">(</span>
+ <span class="token keyword">int</span> s
+
+ s<span class="token punctuation">:</span> <span class="token operator">=</span> <span class="token number">56</span><span class="token punctuation">:</span>
+ <span class="token function">print</span> <span class="token punctuation">(</span>Tere are s weeks in a year<span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+ <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">:</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>假设下面的每一个例子都是某个完整程序的一部分，它们每个将输出什么结果？</p>
+<pre class="line-numbers language-c"><code class="language-c"> a<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Baa Baa Black Sheep."</span>"<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Have you any wool?\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ b<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Begone! \nO vreature of lard!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ c<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"What?\nNo/nBonzo?\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ d<span class="token punctuation">.</span><span class="token keyword">int</span> num<span class="token punctuation">;</span>
+ num <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+ <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d + %d = Td"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> num<span class="token punctuation">,</span> num<span class="token punctuation">,</span> num <span class="token operator">+</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>下面哪几个是C的关键字？main,int,function,char,=  </p>
+</li>
+<li><p>如何以下面的格式输出words和lines的值：”There were 3020 words and 350 lines”？这里，3020和350代表两个变量的值。  </p>
+</li>
+<li><p>考虑下面的程序：  </p>
+<pre class="line-numbers language-c"><code class="language-c"> <span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;studio.h></span></span>
+ <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+ <span class="token punctuation">{</span>
+ <span class="token keyword">int</span> a<span class="token punctuation">,</span> b<span class="token punctuation">;</span>
+
+ a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+ b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* 第7行 */</span>
+ b <span class="token operator">=</span> a<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* 第8行 */</span>
+ a <span class="token operator">=</span> b<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* 第9行 */</span>
+ <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d %d\n"</span><span class="token punctuation">,</span> b<span class="token punctuation">,</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p> 请问在第7行、第8行和第9行之后程序的状态分别是什么？  </p>
+</li>
+</ol>
+<h3 id="2-12-编程练习"><a href="#2-12-编程练习" class="headerlink" title="2.12 编程练习"></a>2.12 编程练习</h3><ol>
+<li><p>编写一个程序，调用printf()函数在一行上输出您的名和姓，再调用一次printf()函数在两个单独的行上输出您的名和姓，然后调用一对printf()函数在一行上输出您的名和姓。输出应如下所示（内容可换为自己的名和姓）  </p>
+<pre class="line-numbers language-c"><code class="language-c">Anton Bruckner
+Anton
+Bruckner
+Anton Bruckner<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>编写一个程序输出您的姓名和地址  </p>
+</li>
+<li><p>编写一个程序，把您的年龄转换成天数并显示二者的值。不用考虑平年（fractional year）和闰年（leap year）的问题。</p>
+</li>
+<li><p>编写一个能够产生下面输出的程序：  </p>
+<pre class="line-numbers language-c"><code class="language-c">For he's a jolly good fellow！
+For he's a jolly good fellow<span class="token operator">!</span>
+For he's a jolly good fellow<span class="token operator">!</span>
+Which nobody can deny<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>程序中除了main()函数之外，要使用两个用户定义的函数：一个用于把上面的夸奖消息输出一次；另一个用于把最后一行输出一次。</p>
+</li>
+<li><p>编写一个程序，创建一个名为toes的整数变量。让程序把toes设置为10，再让程序计算两个toes的和以及toes的平方。程序应该输出所有的3个值，并分别标识它们。</p>
+</li>
+<li><p>编写一个能够产生下列输出的程序：</p>
+<pre class="line-numbers language-c"><code class="language-c">Smile<span class="token operator">!</span>Smile<span class="token operator">!</span>Smile<span class="token operator">!</span>
+Smile<span class="token operator">!</span>Smile<span class="token operator">!</span>
+Smile<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>在程序中定义一个能显示字符串Smile!一次的函数，并在需要时使用该函数。  </p>
+</li>
+<li><p>编写一个程序，程序中要调用名为one_three()的函数。该函数要在一行中显示单词“one”，再调用two()函数，然后再在另一行中显示单词“three”。函数two()应该能在一行中显示单词“two”。main()函数应该在调用one_three()函数之前 显示短语“starting now:”,函数调用之后要显示“done!”。这样，最后的输出结果应该如下所示：</p>
+<pre class="line-numbers language-c"><code class="language-c">starting now<span class="token operator">!</span>
+one
+two
+three
+done<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ol>
+<h2 id="第三章-数据和C"><a href="#第三章-数据和C" class="headerlink" title="第三章 数据和C"></a>第三章 数据和C</h2><p><strong>章节内容</strong>    </p>
+<ul>
+<li>关键字：int, short, long, unsigned, char, float, double, _Bool, _Complex, _Imaginary  </li>
+<li>运算符：sizeof  </li>
+<li>函数：scanf()  </li>
+<li>C使用的基本数据类型  </li>
+<li>整数类型和浮点数类型的区别  </li>
+<li>对上述类型，如何书写常量和声明变量  </li>
+<li>使用printf()和scanf()函数读写各种类型数据的值  </li>
+</ul>
+<h3 id="3-1-示例程序"><a href="#3-1-示例程序" class="headerlink" title="3.1 示例程序"></a>3.1 示例程序</h3><ul>
+<li>错误和警告：编译过程中错误消息标明程序中存在错误，不能对其进行编译。警告则表明尽管代码正确但有可能不是程序员所要的。警告不终止编译过程。  <h3 id="3-4-C数据类型"><a href="#3-4-C数据类型" class="headerlink" title="3.4 C数据类型"></a>3.4 C数据类型</h3><h4 id="总结：基本数据类型"><a href="#总结：基本数据类型" class="headerlink" title="总结：基本数据类型"></a>总结：基本数据类型</h4></li>
+<li>关键字：基本数据类型使用11个关键字：int、long、short、unsigned、char、float、double、signed、_Bool、_Complex和_Imaginary。</li>
+</ul>
+<h2 id="第四章-字符串和格式化输入-输出"><a href="#第四章-字符串和格式化输入-输出" class="headerlink" title="第四章 字符串和格式化输入/输出"></a>第四章 字符串和格式化输入/输出</h2><h2 id="第五章-运算符、表达式和语句"><a href="#第五章-运算符、表达式和语句" class="headerlink" title="第五章 运算符、表达式和语句"></a>第五章 运算符、表达式和语句</h2><h2 id="第六章-C控制语句：循环"><a href="#第六章-C控制语句：循环" class="headerlink" title="第六章 C控制语句：循环"></a>第六章 C控制语句：循环</h2><h2 id="第七章-C控制语句：分支和跳转"><a href="#第七章-C控制语句：分支和跳转" class="headerlink" title="第七章 C控制语句：分支和跳转"></a>第七章 C控制语句：分支和跳转</h2><h2 id="第八章-字符输入-输出和输入确认"><a href="#第八章-字符输入-输出和输入确认" class="headerlink" title="第八章 字符输入/输出和输入确认"></a>第八章 字符输入/输出和输入确认</h2><h2 id="第九章-函数"><a href="#第九章-函数" class="headerlink" title="第九章 函数"></a>第九章 函数</h2><h2 id="第十章-数组和指针"><a href="#第十章-数组和指针" class="headerlink" title="第十章 数组和指针"></a>第十章 数组和指针</h2><h2 id="第十一章-字符串和字符串函数"><a href="#第十一章-字符串和字符串函数" class="headerlink" title="第十一章 字符串和字符串函数"></a>第十一章 字符串和字符串函数</h2><h2 id="第十二章-存储类、链接和内存管理"><a href="#第十二章-存储类、链接和内存管理" class="headerlink" title="第十二章 存储类、链接和内存管理"></a>第十二章 存储类、链接和内存管理</h2><h2 id="第十三章-文件输入-输出"><a href="#第十三章-文件输入-输出" class="headerlink" title="第十三章 文件输入/输出"></a>第十三章 文件输入/输出</h2><h2 id="第十四章-结构和其他数据形式"><a href="#第十四章-结构和其他数据形式" class="headerlink" title="第十四章 结构和其他数据形式"></a>第十四章 结构和其他数据形式</h2><h2 id="第十五章-位操作"><a href="#第十五章-位操作" class="headerlink" title="第十五章 位操作"></a>第十五章 位操作</h2><h2 id="第十六章-C预处理器和C库"><a href="#第十六章-C预处理器和C库" class="headerlink" title="第十六章 C预处理器和C库"></a>第十六章 C预处理器和C库</h2><h2 id="第十七章-高级数据表示"><a href="#第十七章-高级数据表示" class="headerlink" title="第十七章 高级数据表示"></a>第十七章 高级数据表示</h2><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://aurdes.com" rel="external nofollow noreferrer">ezhq</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://aurdes.com/cn/2016102207/">https://aurdes.com/cn/2016102207/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a>
+                    reprint polocy. If reproduced, please indicate source
+                    <a href="https://aurdes.com" target="_blank">ezhq</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Dev/">
+                                    <span class="chip bg-color">Dev</span>
+                                </a>
+                            
+                                <a href="/tags/Read/">
+                                    <span class="chip bg-color">Read</span>
+                                </a>
+                            
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,linkedin,qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">Pay</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Cheers !</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">AliPay</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">Wechat Pay</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="Alipay QRCode">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="Wechat Pay QRCode">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/cn/2016111730/">
+                    <div class="card-image">
+                        
+                        <img src="https://res.cloudinary.com/imgcave/image/upload/v1592717859/Img/BlogCover/WindowsTerminal_gafcjn.jpg" class="responsive-img" alt="Windows系统Hosts修改">
+                        
+                        <span class="card-title">Windows系统Hosts修改</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            关于hosts
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2016-11-11
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Life/" class="post-category">
+                                    Life
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Life/">
+                        <span class="chip bg-color">Life</span>
+                    </a>
+                    
+                    <a href="/tags/OS/">
+                        <span class="chip bg-color">OS</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/cn/2016102213/">
+                    <div class="card-image">
+                        
+                        <img src="https://res.cloudinary.com/imgcave/image/upload/v1592722431/Img/BlogCover/AurdesLight_yyj1uk.png" class="responsive-img" alt="联系的讨好">
+                        
+                        <span class="card-title">联系的讨好</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            得到了越来越多的途经
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2016-10-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Life/" class="post-category">
+                                    Life
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Life/">
+                        <span class="chip bg-color">Life</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + 'From: Aurdes<br />'
+            + 'Author: ezhq<br />'
+            + 'Link: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('2'),
+            headingSelector: 'h1, h2, h3, h4, h5, h6'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5, h6').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="506138655"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2016</span>
+            <a href="/about" target="_blank">ezhq</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;PV:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;time
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;UV:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;people
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2016";
+                    var startMonth = "7";
+                    var startDate = "31";
+                    var startHour = "12";
+                    var startMinute = "12";
+                    var startSecond = "12";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "Total running " + diffDays + " days " + diffHours +
+                            " hours " + diffMinutes + " minutes " + diffSeconds + " seconds";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "Total running " + diffYears + " years " + diffDays +
+                            " days " + diffHours + " hours " + diffMinutes + " minutes " + diffSeconds + " seconds";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/ezhq" class="tooltipped" target="_blank" data-tooltip="Follow my GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:ezhq@outlook.com" class="tooltipped" target="_blank" data-tooltip="Email me" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS feed" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

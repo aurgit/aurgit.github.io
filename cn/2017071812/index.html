@@ -1,0 +1,2748 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="面向零基础新手的C#基础知识, ezhq">
+    <meta name="description" content="ezhq&#39;s club.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>面向零基础新手的C#基础知识 | Aurdes</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="Aurdes" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Aurdes</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>Contact</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Aurdes</div>
+        <div class="logo-desc">
+            
+            ezhq&#39;s club.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			Contact
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://res.cloudinary.com/imgcave/image/upload/v1592732189/Img/BlogCover/CSharp_oj3gb2.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">面向零基础新手的C#基础知识</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Dev/">
+                                <span class="chip bg-color">Dev</span>
+                            </a>
+                        
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C#</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Dev/" class="post-category">
+                                Dev
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2017-07-08
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <blockquote>
+<p>备注：此课程为C#入门课程，作为UWP开发入门课程的先修基础课程。 </p>
+</blockquote>
+<h2 id="第一讲-课程介绍"><a href="#第一讲-课程介绍" class="headerlink" title="第一讲 课程介绍"></a>第一讲 课程介绍</h2><h3 id="内容简介"><a href="#内容简介" class="headerlink" title="内容简介"></a>内容简介</h3><ul>
+<li><p>主题简介，了解课程预期效果，相关软件下载等准备工作。  </p>
+</li>
+<li><p><strong>VisualStudio 2017下载地址</strong> ：<a href="https://www.visualstudio.com/zh-hans/thank-you-downloading-visual-studio/?sku=Community&amp;rel=15" target="_blank">https://www.visualstudio.com/zh-hans/thank-you-downloading-visual-studio/?sku=Community&amp;rel=15</a>  </p>
+</li>
+<li><p>对于VisualStudio 2017安装过程中Windows 10 SDK 安装失败的情况，可以直接下载单独的SDK文件单独安装（安装时候需要退出VisualStudio 2017）。SDK百度云：链接: <a href="http://pan.baidu.com/s/1o8x8hXS" target="_blank" rel="noopener">http://pan.baidu.com/s/1o8x8hXS</a> 密码: vycy  </p>
+</li>
+</ul>
+<h2 id="第二讲-创建你的第一个C-程序"><a href="#第二讲-创建你的第一个C-程序" class="headerlink" title="第二讲 创建你的第一个C#程序"></a>第二讲 创建你的第一个C#程序</h2><h3 id="内容简介-1"><a href="#内容简介-1" class="headerlink" title="内容简介"></a>内容简介</h3><ul>
+<li>学习如何创建一个简单的应用程序，并获取针对您在开始编写和编译代码时可能会遇到的不同问题的常用解决方案的说明。  </li>
+</ul>
+<h3 id="简记"><a href="#简记" class="headerlink" title="简记"></a>简记</h3><ul>
+<li>编程中各种括号区分()、{}、[]、&lt;&gt;  </li>
+<li>编程易错点：大小写、中英文符号使用错误、符号使用没有配对、没有以分号结尾……  </li>
+<li>要思考的点：1.为什么那样做、做了什么、表象之下发生了什么。2.编程语法规则。  </li>
+</ul>
+<h2 id="第三讲-了解你的第一个-C-程序"><a href="#第三讲-了解你的第一个-C-程序" class="headerlink" title="第三讲 了解你的第一个 C# 程序"></a>第三讲 了解你的第一个 C# 程序</h2><h3 id="内容简介-2"><a href="#内容简介-2" class="headerlink" title="内容简介"></a>内容简介</h3><ul>
+<li>为了从较高层面更好地了解 C# 语法，请返回到我们刚刚创建的程序，以便拆分每个关键字和符号。  </li>
+</ul>
+<h3 id="简记-1"><a href="#简记-1" class="headerlink" title="简记"></a>简记</h3><h2 id="第四讲-使用代码文件、项目和解决方案"><a href="#第四讲-使用代码文件、项目和解决方案" class="headerlink" title="第四讲 使用代码文件、项目和解决方案"></a>第四讲 使用代码文件、项目和解决方案</h2><h3 id="内容简介-3"><a href="#内容简介-3" class="headerlink" title="内容简介"></a>内容简介</h3><p>了解如何打开和关闭项目中的各个文件、项目和解决方案之间的关系，等等。  </p>
+<h3 id="简记-2"><a href="#简记-2" class="headerlink" title="简记"></a>简记</h3><ul>
+<li>Solution Explore 解决方案资源管理器  </li>
+<li>当前项目位置:文档（Documents）\Visual Studio（当前使用的版本）\Projects\  </li>
+<li>bin 文件夹为 binary 缩写，表示是二进制执行文件存储文件夹  </li>
+<li>Debug 文件夹调试应用程序时创建的文件夹，程序创建了一个临时版本的应用程序来进行调试  </li>
+</ul>
+<h3 id="评估"><a href="#评估" class="headerlink" title="评估"></a>评估</h3><ul>
+<li><strong>方法:</strong> 一个命名的代码块，你可以通过调用其名称来调用/执行它  </li>
+<li>源代码的编译结果称为：<strong>.NET 程序集</strong>  </li>
+<li>.NET Framework 运行时（CLR）的用途为：它是你的程序在……内运行的内容，可保护用户免受恶意代码的侵害，并处理内存管理和其他运行时任务  </li>
+</ul>
+<h2 id="第五讲-了解数据类型和变量"><a href="#第五讲-了解数据类型和变量" class="headerlink" title="第五讲 了解数据类型和变量"></a>第五讲 了解数据类型和变量</h2><h3 id="内容简介-4"><a href="#内容简介-4" class="headerlink" title="内容简介"></a>内容简介</h3><ul>
+<li>通过浏览基本构造块，向您的词汇表添加 C# 语法︰数据类型和变量。此外，还了解基本主题（例如命名约定和数据类型转换）。  </li>
+</ul>
+<h3 id="简记-3"><a href="#简记-3" class="headerlink" title="简记"></a>简记</h3><ul>
+<li>variable 变量  </li>
+<li><strong>Console.WriteLine()和Console.Write()区别：</strong>Console.WriteLine()和Console.Write()都是System.Console提供的方法，都是用来输出的。Console.WriteLine()是把要输出的字符串与换行符一起输出，会输出完毕后将光标移到下一行，而Console.Write()不会换行。  </li>
+<li><strong>Ctrl + .</strong>  更改某个变量后，可以通过此快捷键批量更改同名变量  </li>
+<li>驼峰式命名法：第一个单词小写，后续单词的首字母大写  </li>
+<li><strong>让变量名更具描述性与辨识性</strong>： 不能对同一个变量定义两次、不要重复使用变量名称（只改改大小写）、遵循命名约定。  </li>
+<li>合理使用intellisense(智能提示)  </li>
+</ul>
+<h2 id="第六讲-if判定语句"><a href="#第六讲-if判定语句" class="headerlink" title="第六讲 if判定语句"></a>第六讲 if判定语句</h2><h3 id="内容简介-5"><a href="#内容简介-5" class="headerlink" title="内容简介"></a>内容简介</h3><ul>
+<li>获得 if 判定语句以及条件运算符的简介。找出如何重构代码以使其更紧凑且不太可能会产生错误。  </li>
+</ul>
+<h3 id="简记-4"><a href="#简记-4" class="headerlink" title="简记"></a>简记</h3><ul>
+<li><strong>范围、在特定范围内部声明变量</strong>：本质上说，在一个内部范围内（如一个if语句内部）定义一个变量时，该变量在这个范围之外不可用。换言之，如果我们在一个代码块内部，或一个花括号内部，定义一个变量，则它只在这对花括号内有用，在这对花括号以外不可用。  </li>
+<li>替换代码 {0}  </li>
+</ul>
+<h3 id="课堂代码"><a href="#课堂代码" class="headerlink" title="课堂代码"></a>课堂代码</h3><pre class="line-numbers language-cs"><code class="language-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Decisions
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            Console.WriteLine("Bob's Big Giveaway");
+            Console.Write("Choose a door: 1, 2 or 3: ");
+
+            string uservalue = Console.ReadLine();
+            string message = "";
+
+            if (uservalue == "1")
+            {
+                message = "You won a new car!";
+            }
+            else if(uservalue == "2")
+            {
+                message = "You won a new boat!";
+            }
+            else if(uservalue == "3")
+            {
+                message = "You won a new cat!";
+            }
+            else
+            {
+                message = "Sorry , we can't understand.";
+                message += " Sorry, you lose.";
+            }
+
+            Console.WriteLine(message);
+
+            Console.ReadLine();
+            */
+
+            Console.WriteLine("Bob's Big Giveaway");
+            Console.Write("Choose a door: 1, 2 or 3: ");
+            string uservalue = Console.ReadLine();
+
+            string message = (uservalue == "1") ? "boat" : "strand of lint";
+
+            //Console.Write("You won a ");
+            //Console.Write(message);
+            //Console.Write(".");
+
+            //Console.WriteLine("You won a {0} .", message);
+            Console.WriteLine("You entered: {0}, therefore you won a {1}.", uservalue, message);
+
+            Console.ReadLine();
+
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="第七讲-运算符、表达式和语句"><a href="#第七讲-运算符、表达式和语句" class="headerlink" title="第七讲 运算符、表达式和语句"></a>第七讲 运算符、表达式和语句</h2><h3 id="内容简介-6"><a href="#内容简介-6" class="headerlink" title="内容简介"></a>内容简介</h3><ul>
+<li>了解如何创建格式正确的 C# 语句(由包含运算符和操作数的表达式组成)。了解在忽略 C# 的语法规则时出现的编译错误。  </li>
+</ul>
+<h3 id="简记-5"><a href="#简记-5" class="headerlink" title="简记"></a>简记</h3><ul>
+<li>操作数、运算符、表达式  </li>
+<li>对象、类、变量</li>
+<li><strong>运算符：</strong> +加、-减、*乘、/除  </li>
+<li><strong>逻辑运算符：</strong> and 与、|| 或  </li>
+<li>Console是一个“类”，而“类”是“容器”，缺少对方法的一个更强大的定义。访问一个类或一个对象的成员方法的方式就是使用英文的 . 符号，此为成员访问运算符。  </li>
+<li>方法调用运算符，如通过()符号调用一个名为 WriteLine 的方法  </li>
+</ul>
+<h3 id="评估-1"><a href="#评估-1" class="headerlink" title="评估"></a>评估</h3><ul>
+<li>表达式由哪几项组成: 操作数和运算符  </li>
+<li>语句由哪项组成：表达式  </li>
+</ul>
+<h2 id="第八讲-for迭代语句"><a href="#第八讲-for迭代语句" class="headerlink" title="第八讲 for迭代语句"></a>第八讲 for迭代语句</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>了解几种不同类型的迭代语句，如何利用“代码段”帮助提示您此复杂语句的语法，并进行调试。  </li>
+</ul>
+<h3 id="简记-6"><a href="#简记-6" class="headerlink" title="简记"></a>简记</h3><ul>
+<li>for 迭代语句</li>
+<li>F9 设置断点调试  </li>
+<li>单步执行程序  </li>
+<li>条件中断调试  </li>
+<li>出现代码补全提示后 Tab * 2 进行自动代码模板填充，填充并进行条件更改后直接回车可以自动到达代码块编写处。  </li>
+</ul>
+<h2 id="第九讲-理解数组"><a href="#第九讲-理解数组" class="headerlink" title="第九讲 理解数组"></a>第九讲 理解数组</h2><h3 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>了解数组并了解如何声明和使用数组。观看几个强大的内置方法(可为数组提供额外的功能)的演示。  </li>
+</ul>
+<h3 id="简记-7"><a href="#简记-7" class="headerlink" title="简记"></a>简记</h3><ul>
+<li>数组  </li>
+</ul>
+<h3 id="相关代码"><a href="#相关代码" class="headerlink" title="相关代码"></a>相关代码</h3><pre class="line-numbers language-cs"><code class="language-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace UnderstandingArrays
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            int number1 = 4;
+            int number2 = 8;
+            int number3 = 15;
+            int number4 = 16;
+            int number5 = 23;
+
+            if (number1 = 16)
+            {
+
+            }
+            else if (number2 == 16)
+            {
+
+            }
+            else if (number3 == 16)
+            {
+
+            }
+            */
+
+            /*
+            int[] numbers = new int[5];
+
+            numbers[0] = 4;
+            numbers[1] = 8;
+            numbers[2] = 15;
+            numbers[3] = 16;
+            numbers[4] = 23;
+            //numbers[5] = 42;
+
+            //Console.WriteLine(numbers[1]);
+            Console.WriteLine(numbers.Length);
+            Console.ReadLine();
+            */
+
+            //int[] numbers = new int[] { 4, 8, 15, 16, 23, 42 };
+
+            string[] names = new string[] { "Eddie", "Alex", "Michael" };
+
+
+            /*for (int i = 0; i < names.Length; i++)
+            {
+                Console.WriteLine(names[i]);
+            }
+            Console.ReadLine();
+            */
+
+            /*
+            foreach (string name in names)
+            {
+                Console.WriteLine(name);
+            }
+            Console.ReadLine();
+            */
+
+            //利用数组实现字符串倒置
+            string zig = "You can't get what you want out of life " + 
+                " if you help enough other people get what they want.";     //创建字符串zig
+            char[] charArray = zig.ToCharArray();       //将字符串zig中的字符复制到字符数组charArrray
+            Array.Reverse(charArray);       //反转整个charArray中的项目顺序
+
+            foreach (char zigChar in charArray)     //循环访问数组charArray
+            {
+                Console.Write(zigChar);
+            }
+            Console.ReadLine();
+
+
+
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="评估-2"><a href="#评估-2" class="headerlink" title="评估"></a>评估</h3><ul>
+<li>正确声明并初始化数组：<code>int[] numbers = {1, 2, 3, 4};</code>  </li>
+<li>当尝试访问数组中位于数组范围外部的项目时，会遇到的异常：IndexOutOfRangeException  </li>
+</ul>
+<h2 id="第十讲-定义和调用方法"><a href="#第十讲-定义和调用方法" class="headerlink" title="第十讲 定义和调用方法"></a>第十讲 定义和调用方法</h2><h3 id="简介-2"><a href="#简介-2" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>创建一个帮助器<strong>方法</strong>，创建和调用方法来检索值，创建和使用输入参数，了解字符串格式设置，并创建重载方法。  </li>
+</ul>
+<h3 id="简记-8"><a href="#简记-8" class="headerlink" title="简记"></a>简记</h3><ul>
+<li><strong>方法：</strong>由花括号定义的代码块  </li>
+<li>对于多次复制粘贴的代码块，要仔细检查，保持警惕  </li>
+<li>本讲需要仔细体会，尤其是重载方法  </li>
+</ul>
+<h3 id="课堂代码-1"><a href="#课堂代码-1" class="headerlink" title="课堂代码"></a>课堂代码</h3><pre class="line-numbers language-cs"><code class="language-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HelperMethods
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("The Name Game");
+
+            Console.Write("What's your first name? ");
+            string firstName = Console.ReadLine();
+
+            Console.Write("What's your last name? ");
+            string lastName = Console.ReadLine();
+
+            Console.Write("In what city were you born?");
+            string city = Console.ReadLine();
+
+            DisplayResult(ReverseString(firstName),
+                ReverseString(lastName),
+                ReverseString(city));
+
+            Console.ReadLine();
+
+        }
+
+        private static string ReverseString(string message)
+        {
+            char[] messageArray = message.ToCharArray();
+            Array.Reverse(messageArray);
+            return String.Concat(messageArray);
+        }
+
+        private static void DisplayResult(
+            string reversedFirstName,
+            string reversedLastName,
+            string reversedCity)
+        {
+            Console.Write("Results: ");
+            Console.Write(string.Format("{0} {1} {2}",
+                reversedFirstName,
+                reversedLastName,
+                reversedCity));
+        }
+
+        private static void DisplayResult(string message)
+        {
+            Console.Write("Results: ");
+            Console.Write(message);
+        }
+
+
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="评估-3"><a href="#评估-3" class="headerlink" title="评估"></a>评估</h3><ul>
+<li>应该在何时创建方法：当你需要可能多次重复使用相同的代码时  </li>
+<li>要创建重载方法，要执行的操作：创建两个或以上具有相同名称，但输入参数数目不同和/或数据类型不同的方法  </li>
+</ul>
+<h2 id="第十一讲-While迭代语句"><a href="#第十一讲-While迭代语句" class="headerlink" title="第十一讲 While迭代语句"></a>第十一讲 While迭代语句</h2><h3 id="简介-3"><a href="#简介-3" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>学习一个新的迭代语句，您可以使用该语句继续执行一个代码块，直到某个条件不再为 true。  </li>
+</ul>
+<h3 id="简记-9"><a href="#简记-9" class="headerlink" title="简记"></a>简记</h3><ul>
+<li>前期已学迭代语句回顾：<br><strong>for 循环：</strong>能够遍历代码块，预设次数根据计数器来定<br><strong>foreach 迭代语句：</strong>能够以一个数组中每一项一次的频率来遍历一个代码块<br>在上面两种迭代语句中，都需要知道有多少次迭代或者要遍历多少次指定的代码块。但是如果事先不知道迭代多少次，或许需要一直迭代，知道满足某个条件为止，可以使用while、do-while  </li>
+<li>do-while 跳出迭代语句之前至少能迭代一次  </li>
+<li>本讲主要内容：while、do-while  </li>
+<li>while 用处例子：为控制台窗口应用程序创建某类菜单系统  </li>
+<li><strong>int.Parse()</strong> 强制类型转换  </li>
+<li><strong>Console.Clear()</strong> 清屏  </li>
+<li><strong>Random.Next 方法 (Int32, Int32)</strong> 返回在指定范围内的任意整数  </li>
+<li>while将评估最开始的第一次，但需求实际上可能从不运行。do-while将先执行一次，然后评估条件while()  </li>
+</ul>
+<h3 id="课堂代码-2"><a href="#课堂代码-2" class="headerlink" title="课堂代码"></a>课堂代码</h3><p><strong>带菜单的打印数字和猜数字游戏</strong>  </p>
+<pre class="line-numbers language-cs"><code class="language-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Whileteration
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool displayMenu = true;
+            while (displayMenu)
+            {
+                displayMenu = MainMenu();
+            }
+        }
+
+        private static bool MainMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("Choose an option:");
+            Console.WriteLine("1) Print Numbers");
+            Console.WriteLine("2) Guessing Game");
+            Console.WriteLine("3) Exit");
+            string result = Console.ReadLine();
+            if (result == "1")
+            {
+                PrintNumbers();
+                return true;
+            }
+            else if (result == "2")
+            {
+                GuessingGame();
+                return true;
+            }
+            else if (result == "3")
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        private static void PrintNumbers()
+        {
+            Console.Clear();
+            Console.WriteLine("Print Numbers!");
+            Console.Write("Type a number: ");
+            int result = int.Parse(Console.ReadLine()); //将读到的字符串转换为int
+            int counter = 1;
+            while (counter <= result)
+            {
+                Console.Write(counter);
+                Console.Write("-");
+                counter++;
+            }
+            Console.ReadLine();
+        }
+
+        private static void GuessingGame()
+        {
+            Console.Clear();
+            Console.WriteLine("Guessing game!");
+
+            Random myRandom = new Random();     //产生随机数
+            int randowmNumber = myRandom.Next(1, 11);   //生成1-11的随机数
+
+            int guess = 0;
+            bool incorrect = true;
+
+            do
+            {
+                Console.WriteLine("Guess a number between 1 and 10: ");
+                string result = Console.ReadLine();
+                guess++;
+
+                if (result == randowmNumber.ToString())
+                {
+                    incorrect = false;
+                }
+                else
+                {
+                    Console.WriteLine("Wrong!");
+                }
+
+            } while (incorrect);
+            Console.WriteLine("Correct! It took you {0} guesses.",guess);
+
+
+            Console.ReadLine();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="评估-4"><a href="#评估-4" class="headerlink" title="评估"></a>评估</h3><ul>
+<li>如果需要.NET 生成一个随机数，可以用：Random类  </li>
+<li>为什么选择do-while语句：因为需要执行代码块至少一次  </li>
+<li>为什么应该使用while 迭代语句而非for 迭代语句：因为需要继续循环访问代码块，直到给定条件不再为true  </li>
+</ul>
+<h2 id="第十二讲-处理字符串"><a href="#第十二讲-处理字符串" class="headerlink" title="第十二讲 处理字符串"></a>第十二讲 处理字符串</h2><h3 id="简介-4"><a href="#简介-4" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>了解如何使用内置的 String 方法操作文字字符串内部的内容，并了解如何使用 StringBuilder 类以内存和资源友好的方式将很多字符串串联在一起。  </li>
+</ul>
+<h3 id="简记-10"><a href="#简记-10" class="headerlink" title="简记"></a>简记</h3><ul>
+<li><strong>主要内容：</strong>  <ol>
+<li>如何使用反斜杠字符进行转义、插入  </li>
+<li>文字字符串中的转义字符、特殊字符  </li>
+<li>如何使用 String.Format  </li>
+<li><a href="https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/standard-numeric-format-strings" target="_blank" rel="noopener">标准数字格式字符串（英语）</a><br> <a href="https://msdn.microsoft.com/zh-cn/library/241ad66z(v=vs.80).aspx" target="_blank" rel="noopener">标准数字格式字符串（中文）</a>  </li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><p>反斜杠字符“\”特殊性：可以用来转义或者将转义序列插入到文字字符串中，也可以用来将一些特殊字符放入某些换行符中，把东西放入文字字符串中。  </p>
+</li>
+<li><p>真实需要把 \ 当做字符方法：  </p>
+<ol>
+<li>使用双重反斜杠: <code>\\</code>  </li>
+<li>在字符串双引号前使用@声明：<code>@“Test\”</code>  </li>
+</ol>
+</li>
+<li><p>要是数据显示为数据格式，可以在引用后面跟上冒号和格式符号C：<code>string mySting = string.Format("{0:C}", 123.45);</code>  </p>
+</li>
+<li><p>显示为数字格式：<code>string myString = string.Format("{0:N}", 123456789)</code>  </p>
+</li>
+<li><p>百分号格式：<code>string myString = String.Format("Percentage:{0:P}", .123);</code>  </p>
+</li>
+<li><p>创建自定义格式（格式化自定义电话号码）</p>
+<pre class="line-numbers language-cs"><code class="language-cs">string myString = string.Format("Phone Number:{0:(###) ###-####}",1234567890);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>当使用自定义 <code>#</code> 符号来为数字值创建一个自定义格式时候，格式化会从右向左进行。若实际数字多于格式中表示的数字，多余的数字会被推向最左侧的格式。  </p>
+</li>
+<li><p><strong>String.Substring(Int32)</strong> 从String中检索，返回忽略前Int32个字符后的字符  </p>
+</li>
+<li><p><strong>String.Substring(Int32,Int32)</strong> 从String中检索，忽略前Int32个字符，取出接下来的Int32个字符并丢弃多于的字符  </p>
+</li>
+<li><p><strong>String.ToUpper()</strong> 强制大写转换String  </p>
+</li>
+<li><p><strong>String.Replace(“a”, “b”)</strong> 搜索String中的a并替换为b  </p>
+</li>
+<li><p><strong>String.Remove(5, 12)</strong> 删除String字符串中5-12字符  </p>
+</li>
+<li><p><strong>String.Trim()</strong> 从当前 String 对象移除所有前导空白字符和尾部空白字符  </p>
+</li>
+<li><p><strong>StringBuilder</strong> 创建可变字符字符串  </p>
+</li>
+</ul>
+<h3 id="课堂代码-3"><a href="#课堂代码-3" class="headerlink" title="课堂代码"></a>课堂代码</h3><pre class="line-numbers language-cs"><code class="language-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WorkingWithString
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //string myString = "My \"so-called\" life";
+            //string myString = "What if I need a \nNew line?";
+            //string myString = "Go to your c:\ drive";
+            //string myString = @"Go to your c:\ drive";
+
+            //string myString = String.Format("{0} = {1}","First", "Second");
+            //string myString = String.Format("{0} = {0}", "First", "Second");
+            //string myString = String.Format("{1} = {0}", "First", "Second");
+
+            //string myString = String.Format("{0:C}", 123.45);             //显示货币格式
+            //string myString = String.Format("{0:N}", 123456789);          //显示数字格式
+            //string myString = String.Format("Percentage:{0:P}", .123);    //显示百分比格式
+            //string myString = string.Format("Phone Number:{0:(###) ###-####}",1234567890); //显示自定义电话格式
+
+            //string myString = " That summer we took threes across the board  ";
+            //myString = myString.Substring(6,14);      //抛弃前6个字符，只取后续14个字符
+            //myString = myString.ToUpper();            //强制大写转换
+            //myString = myString.Replace(" ", "--");   //搜索替换
+            //myString = myString.Remove(6, 14);        //删除字符
+
+            /*
+            myString = String.Format("Length before:{0} -- Length after:{1}",
+                myString.Length,
+                myString.Trim().Length);
+            */
+
+            /*
+            string myString = "";
+            for (int i = 0; i < 100; i++)
+            {
+                myString += "--" + i.ToString();
+            }
+            */
+
+            StringBuilder myString = new StringBuilder();
+
+            for (int i = 0; i < 100; i++)
+            {
+                myString.Append("--");
+                myString.Append(i);
+            }
+
+            Console.WriteLine(myString);
+            Console.ReadLine();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="评估-5"><a href="#评估-5" class="headerlink" title="评估"></a>评估</h3><ol>
+<li><p><strong>StringBuilder 类有什么用途：</strong>提供一种更友好的内存方式来处理字符串  </p>
+</li>
+<li><p><strong>那个字符用于对C#字符串中的绝大多数特殊字符进行转义：</strong>反斜杠  </p>
+</li>
+<li><p><strong>下列哪一项不是字符串数据类型的可用方法</strong>D  </p>
+<ul>
+<li>A. Trim()  </li>
+<li>B. Replace()  </li>
+<li>C. Append()  </li>
+<li>D. ToUpper()  </li>
+</ul>
+</li>
+<li><p><strong>我想设置这些数字的格式：1234.56 ,使其如 1,234.56 所示，下面那个表达式可以实现这一点</strong>A  </p>
+<pre><code> * A. string.Format("{0:C}", 1234.56)  
+ * B. string.Format("{0:#,###.##}", 1234.56)  
+ * C. string.Format("{0:G}", 1234.56)  
+ * D. string.Format("{0:P}", 1234.56)  </code></pre></li>
+<li><p><strong>以下代码行的什么问题会导致它无法编译string myString = string.Format(“{2} - {3}”, “3”, “4”, “5”);</strong>D  </p>
+<ul>
+<li>A. 有未使用的额外字符串值  </li>
+<li>B. 大括号中的替换代码是从零开始的，因此”{3}”将在范围之外  </li>
+<li>C. 替换代码应该使用方括号，而不是花括号  </li>
+<li>D. 替换代码将不起作用，除非用”{1}”开头  </li>
+</ul>
+</li>
+</ol>
+<h2 id="第十三讲-处理日期和时间"><a href="#第十三讲-处理日期和时间" class="headerlink" title="第十三讲 处理日期和时间"></a>第十三讲 处理日期和时间</h2><h3 id="简介-5"><a href="#简介-5" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>了解如何使用日期和时间数据，如何创建新的 DateTime实例，如何添加时间，以及如何设置要显示的数据格式。看看 TimeSpan 类  </li>
+</ul>
+<h3 id="简记-11"><a href="#简记-11" class="headerlink" title="简记"></a>简记</h3><ul>
+<li><p><strong>主要内容</strong>  </p>
+<ul>
+<li>时间显示  </li>
+<li>时间、日期的加、减  </li>
+<li>通过<code>TimeSpan</code>确定两个日期之间的差值  </li>
+<li>创建日期的不同方式（创建过去、现在、未来时间）：用DateTime对戏那个构造函数创建时间、用DayTime.parse并传递到一个字符串中  </li>
+</ul>
+</li>
+<li><p>用 . 可以将一个接一个的调用方法连接在一起。例如<code>Console.WriteLinge(myValue.AddDays(3).ToLongDateString());</code>  </p>
+</li>
+</ul>
+<h3 id="课堂代码-4"><a href="#课堂代码-4" class="headerlink" title="课堂代码"></a>课堂代码</h3><pre class="line-numbers language-cs"><code class="language-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DatesAndTimes
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DateTime myValue = DateTime.Now;
+            //Console.WriteLine(myValue.ToString());    //显示标准当前区域时间
+            //Console.WriteLine(myValue.ToShortDateString());   //短日期格式
+            //Console.WriteLine(myValue.ToShortTimeString());   //短时间格式
+            //Console.WriteLine(myValue.ToLongDateString());    //长日期格式
+            //Console.WriteLine(myValue.ToLongTimeString());    //长时间格式
+
+            //Console.WriteLine(myValue.AddDays(3).ToLongDateString());     //日期加
+            //Console.WriteLine(myValue.AddHours(3).ToLongTimeString());    //时间加
+            //Console.WriteLine(myValue.AddDays(-3).ToLongDateString());    //日期减
+
+            //Console.WriteLine(myValue.Month);     //月份
+
+            //DateTime myBirthday = new DateTime(1995, 12, 7);      //显示过去时间
+            //Console.WriteLine(myBirthday.ToShortDateString());
+
+            DateTime myBirthday = DateTime.Parse("12/7/1969");      //设定出生日期
+            TimeSpan myAge = DateTime.Now.Subtract(myBirthday);     //计算时间跨度年
+            Console.WriteLine(myAge.TotalDays);     //年转化为天
+
+            Console.ReadLine();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="评估-6"><a href="#评估-6" class="headerlink" title="评估"></a>评估</h3><ol>
+<li><strong>哪种数据类型表示两个特定的DateTime对象之间经过的时间</strong>C  <ul>
+<li>A. SpannedTime  </li>
+<li>B. ElapsedTime  </li>
+<li>C. TimeSpan  </li>
+<li>D. TimeElapsed  </li>
+</ul>
+</li>
+<li><strong>下列哪一项不是初始化新的DateTime对象的有效方式</strong>D  <ul>
+<li>A. DateTime myValue = DateTime.Parse(“12/7/1969”);  </li>
+<li>B. DateTime myValue = new DateTime(1969, 12, 7);  </li>
+<li>C. DateTime myValue = DateTime.Now;  </li>
+<li>D. DateTime myValue = 12/7/1969;  </li>
+</ul>
+</li>
+</ol>
+<h2 id="第十四讲-了解类"><a href="#第十四讲-了解类" class="headerlink" title="第十四讲 了解类"></a>第十四讲 了解类</h2><h3 id="简介-6"><a href="#简介-6" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>学习如何定义类和如何创建新实例，如何定义属性，以及如何设置给定类实例的值及获取相应值。  </li>
+</ul>
+<h3 id="简记-12"><a href="#简记-12" class="headerlink" title="简记"></a>简记</h3><ul>
+<li><p>类是相关方法的容器  </p>
+</li>
+<li><p>创建类的短属性模板快速输入：prop + Tab*2  </p>
+</li>
+<li><p>创建类的完整属性模板快速输入：propfull + Tab*2  </p>
+</li>
+<li><p><a href="https://msdn.microsoft.com/zh-cn/library/364x0z75(v=vs.71).aspx" target="_blank" rel="noopener">decimal</a>  </p>
+</li>
+<li><p>为类创建方法 </p>
+</li>
+</ul>
+<h3 id="课堂代码-5"><a href="#课堂代码-5" class="headerlink" title="课堂代码"></a>课堂代码</h3><pre class="line-numbers language-cs"><code class="language-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SimpleClasses
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Car myCar = new Car();      //创建Car类的实例
+            myCar.Make = "Oldsmobile";
+            myCar.Model = "Cutlas Supreme";
+            myCar.Year = 1986;
+            myCar.Color = "Silver";
+
+            Console.WriteLine("{0} {1} {2} {3}", 
+                myCar.Make, 
+                myCar.Model, 
+                myCar.Year, 
+                myCar.Color);
+
+            //decimal value = DetermineMarketValue(myCar);
+            //Console.WriteLine("{0:C}", value);
+
+            Console.WriteLine("{0:C}",myCar.DetermineMarketValue());
+
+            Console.ReadLine();
+
+        }
+
+        private static decimal DetermineMarketValue(Car car)
+        {
+            decimal carValue = 100.0M;
+
+            //Someda I might look up the car
+            //online webservice to get more
+            //accurtge value.
+            return carValue;
+        }
+
+
+    }
+
+    class Car       //创建Car类
+    {
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
+        public string Color { get; set; }
+
+        public decimal DetermineMarketValue()
+        {
+            decimal carValue;
+
+            if (Year > 1990)
+            {
+                carValue = 10000;
+            }
+            else
+            {
+                carValue = 2000;
+            }
+
+            return carValue;
+        }
+    }
+
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="评估-7"><a href="#评估-7" class="headerlink" title="评估"></a>评估</h3><ul>
+<li>下列哪一项不是类声明的一部分D<br>  A.重载方法<br>  B.方法<br>  C.属性<br>  D.对象  </li>
+</ul>
+<h2 id="第十五讲-详细了解类和方法"><a href="#第十五讲-详细了解类和方法" class="headerlink" title="第十五讲 详细了解类和方法"></a>第十五讲 详细了解类和方法</h2><h3 id="简介-7"><a href="#简介-7" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>挖掘有关类的更多详细信息:创建新实例，添加类引用，将引用传递到方法。另外，了解重载方法、静态与实例方法以及构造函数。  </li>
+</ul>
+<h3 id="简记-13"><a href="#简记-13" class="headerlink" title="简记"></a>简记</h3><ul>
+<li><p><strong>对象的生存期：</strong>对象变得活跃，生存一段时间，然后死亡，从内存中移除。  </p>
+</li>
+<li><p><strong>.NET Framework 运行库及其在对象创建、维护以及最终从内存中移除中所发挥的作用</strong>  </p>
+</li>
+<li><p><strong>构造函数</strong>是在类的新实例创建时让开发人员能够编写代码的方法  </p>
+</li>
+<li><p><strong>静态方法和属性</strong>  </p>
+</li>
+<li><p>每当发出为类创建新实例的命令时（如 Car myCar = new Car(); ），.NET Framework运行库必须启动，在计算机内存中创建一个点，其大小足以容纳“Car”类中的新实例。计算机内存拥有地址。  </p>
+<ul>
+<li>.NET Framework 的第一个任务是查找没有被占用的可用空地址（目前没有存储、且地址必须足够大，以便存储类的实例）。  </li>
+<li>然后.NET Framework运行库将创建对象实例，并将把目前存储在这个对象实例中的任何值复制到这个内存地址中，并记录对象所放置的位置。它记录放置对象实例的地址，然后将地址返回给我们，我们用实际名称或类的实例名称（“myCar”）存储此地址  </li>
+</ul>
+</li>
+<li><p>可以通过设置对象为空值（myOtherCar = null;）来实现对象被移除，空值并不是零，也不是空字符串，而是不确定。  </p>
+</li>
+<li><p>每当我们将引用设置为空值，或每当超出范围时，我们将移除对象的所有引用。但.NET Framework 运行库本身会了解何时准备就绪（会在后续某个时间），可以从内存中完全移除这些对象。在大多数情况下，这并不是问题。偶尔会发生问题，可以通过“确定收尾”来明确告知系统立即移除相关对象。  </p>
+</li>
+<li><p>构造函数可以理解为在函数类的模板中提前设置某个值，当类的新实例创建时候默认已经是此值。  </p>
+</li>
+<li><p><strong>过载构造函数</strong> 通过调用过载构造函数，可以在实例化时就填写所有值  </p>
+</li>
+<li><p><strong>隐式默认构造函数</strong>在编译时生成，没有输入参数，没有方法正文，但可以让你调用，并创建一致的类的新实例  </p>
+</li>
+<li><p>自定义可以让你对实例化的流程具备控制权  </p>
+</li>
+<li><p>处理包含静态成员的类和包含实例成员的类之间存在根本性差异。实例成员像目前为止的教程操作：有一系列属性描述“Car”等给定类的单一实例，可能是在类似于“Car”的构造函数的单一实例中运行的方法。例如静态方法等静态成员，不会实际在某个单一实例中运行，更类似于实用程序，可以随时调用，独立于类的给定实例甚至应用程序的状态，可以随时使用，因为它们并非实际关联某个具体的“Car”，而是适用于所有“Car”，可以随时使用。此为静态成员和实例成员的区别。  </p>
+</li>
+<li><p>上述两者辨别：如果是静态成员，会包含静态关键词，无法引用任何实例。实例成员类似实例属性，甚至作用于实例属性的实例方法，他们需要类的实例方可运行。主要需明白：类中存在两种成员，尽量不要在同一个类中混合使用  </p>
+</li>
+<li><p>本讲总结：</p>
+<ul>
+<li>对象生存期  </li>
+<li>创建了对象的新实例（在计算机内存总创建一个区域，为我们返回引用内存中这一对象的地址）  </li>
+<li>在对象的生存期内发生了什么情况  </li>
+<li>当移除对对象的所有引用时，会发生什么情况  </li>
+<li>.NET Framework 运行库的角色，及其如何记录对对象的引用数量，以便对内存中不再有引用的对象执行垃圾回收，确保有条理，并让内存可供其他应用程序使用或供应用程序再次使用  </li>
+<li>构造函数，以及开发人员如何在对象创建时用它将对象的新实例设置为有效状态  </li>
+<li>静态关键词，分析了.NET Framework类库内静态成员的一些用法  </li>
+<li>在主方法或自身的方法总自行创建静态成员  </li>
+<li>静态成员和实例成员之间的区别（两者不相容），以及为什么不讨论为什么选择其中一种的原因  </li>
+</ul>
+</li>
+</ul>
+<h3 id="课堂代码-6"><a href="#课堂代码-6" class="headerlink" title="课堂代码"></a>课堂代码</h3><pre class="line-numbers language-cs"><code class="language-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ObjectLifeTime
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Car myCar = new Car();
+
+            Car.MyMethod();
+
+            /*
+            myCar.Make = "Oldmobile";
+            myCar.Model = "Cutlas Supreme";
+            myCar.Year = 1986;
+            myCar.Color = "Silver";
+            */
+
+            //Car myThirdCar = new Car("Ford", "Escape", "2005", "White");    //调用过载构造函数
+
+            /*
+            Car myOtherCar;
+            myOtherCar = myCar;
+
+            Console.WriteLine("{0} {1} {2} {3}",
+                myOtherCar.Make,
+                myOtherCar.Model,
+                myOtherCar.Year,
+                myOtherCar.Color);
+
+            myOtherCar.Model = "98";
+
+            Console.WriteLine("{0} {1} {2} {3}",
+                myCar.Make,
+                myCar.Model,
+                myCar.Year,
+                myCar.Color);
+
+            myOtherCar = null;
+
+            Console.WriteLine("{0} {1} {2} {3}",
+                myOtherCar.Make,
+                myOtherCar.Model,
+                myOtherCar.Year,
+                myOtherCar.Color);
+
+            myCar = null;
+            */
+
+            Console.ReadLine();
+        }
+    }
+
+    class Car
+    {
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
+        public string Color { get; set; }
+
+        /*
+        public Car()
+        {
+            // You could load from a configuration file,
+            // a database, etc.
+            Make = "Nissan";
+        }
+
+        public Car(string make, string model, int year, string color)   //过载构造函数
+        {
+            Make = make;
+            Model = model;
+            Year = year;
+            Color = color;
+        }
+        */
+
+        public static void MyMethod()       //静态方法属性
+        {
+            Console.WriteLine("Called the static MyMethod");
+            Console.WriteLine(Make);
+        }
+
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="评估-8"><a href="#评估-8" class="headerlink" title="评估"></a>评估</h3><ul>
+<li><p><strong>当前执行范围中不再引用的对象会发生什么情况？</strong>B  </p>
+<ul>
+<li>A. 由.NET Framework运行时保留直到将来再次需要  </li>
+<li>B. 由.NET Framework运行时的垃圾回收器从内存中移除  </li>
+<li>C. 由操作系统从内存中自动移除  </li>
+<li>D. 存储在计算机内存的一个称为堆栈的特殊部分中  </li>
+</ul>
+</li>
+<li><p><strong>关于构造函数，以下语句不正确的是</strong>B  </p>
+<ul>
+<li>A. 系统会自动为你创建一个默认构造函数（无论你是否意识到）  </li>
+<li>B. 你必须使用 static 关键字来定义构造函数  </li>
+<li>C. 你可以按照创建任何重载方法所用的方式来创建重载构造函数  </li>
+<li>D. 当你创建新的类实例时，系统会自动调用构造函数  </li>
+</ul>
+</li>
+</ul>
+<h2 id="第十六讲-了解范围和辅助功能修饰符"><a href="#第十六讲-了解范围和辅助功能修饰符" class="headerlink" title="第十六讲 了解范围和辅助功能修饰符"></a>第十六讲 了解范围和辅助功能修饰符</h2><h3 id="简介-8"><a href="#简介-8" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>探讨变量范围以及 .NET Framework 类库如何使用辅助功能修饰符向给定类的用户显示或隐藏其给定服务的实现  </li>
+</ul>
+<h3 id="简记-14"><a href="#简记-14" class="headerlink" title="简记"></a>简记</h3><ul>
+<li><p><strong>变量范围</strong> 每当在代码块中声明变量时候，这个变量仅在这个代码块、这个代码块的代码块、内部代码块或这个代码块内部的代码块的生存期中活跃。意味着当代码块执行完毕时，在这个代码块内部定义的变量将无法再访问。其值被 .NET Framework 运行库释放。  </p>
+</li>
+<li><p>之前每次创建类时。通常会用 public 关键词，偶尔会用 private 关键词。public 和 private 都是“可访问性修饰符”，用于实施有人参与的面向对象的编程，称为<strong>封装</strong>，此为总要概念。  </p>
+</li>
+<li><p>简而言之，可以将<strong>类</strong>想象成“黑盒子”，所有重要的后台、功能应封装在公共方法和公共属性等界面背后。类也可能存在私有字段，或者在幕后使用的私有方法。类的使用者无须知道类的内部运作，也能处理类、运行类。只需知道通过公共方法中的公共属性所公共显示的内容。“私有”意味着可由同一类中的任何其他方法调用。  </p>
+</li>
+<li><p><strong>公共方法</strong>可以由类别之外的人、给定类别之外的其他代码调用。<strong>私有方法</strong>只可由类内部的成员调用。  </p>
+</li>
+</ul>
+<h3 id="课堂代码-7"><a href="#课堂代码-7" class="headerlink" title="课堂代码"></a>课堂代码</h3><ul>
+<li>此课堂代码主要聚焦于检验变量范围如何运作  <pre class="line-numbers language-cs"><code class="language-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<p>namespace UnderstandingScope<br>{<br>    class Program   //类class<br>    {<br>        private static string k = “”;       //私有静态字符k</p>
+<pre><code>    static void Main(string[] args)
+    {
+        string j = "";      //在for循环代码块之外定义j
+
+        for (int i = 0; i &lt; 10; i++)
+        {
+            j = i.ToString();
+            k = i.ToString();
+            Console.WriteLine(i);
+
+            if (i == 9)
+            {
+                string l = i.ToString();    //在if层面定义l
+            }
+            //Console.WriteLine(l);           //无法直接引用l
+
+
+        }
+        //Console.WriteLine(i);
+        Console.WriteLine("Outside of the for: " + j);      //在for代码块之外访问j
+        Console.WriteLine("Outside of the for: " + k);
+
+        HelperMethod();
+
+        Car myCar = new Car();
+        myCar.DoSomething();    //调用公共方法"DoSometing"
+
+        Console.ReadLine();
+    }
+
+    static void HelperMethod()
+    {
+        Console.WriteLine("Value of k from the HelperMethod():" + k);
+    }
+}
+
+class Car   //  类calss： Car ，用来说明封装的概念
+{
+    public void DoSomething()       //公共方法
+    {
+        Console.WriteLine(helperMethod());
+    }
+
+    private string helperMethod()   //私有方法
+    {
+        return "Hello world!";
+    }
+}</code></pre><p>}</p>
+<pre><code>
+### 评估  
+评估题比较简单，看了本节视频后不会有大问题，略  
+
+
+## 第十七讲 了解命名空间和如何使用 .NET 类库  
+### 简介  
+* 了解命名空间以及如何通过搜索 Bing 和 MSDN 找到您的应用程序的类  
+
+### 简记  
+
+* .NET Framework 类库是一系列类的集合，每一个类均包含我们可在应用程序中使用的方法和功能。  
+* .NET Framework 类库将自己包含的代码分为多个文件，这些代码文件称为**.NET 程序集**。事实上，我们自己编写的程序，也将最终编译成 .NET 程序集。  
+
+* **自行创建类库**  
+
+* 完整的 .NET Framework 类库中定义了数万个类，在少数情况下适用了同样的类名称，或至少存在使用同样名称的可能性。如果发生这种情况，创建者需要能够分辨不同的类，因此他们提出了“命名空间”的概念。  
+
+* **命名空间**类似于类的“姓氏”  
+
+* 在使用应用程序的过程中，所需的类的全程（如控制台类的全程是 System.Console.WriteLine，即 System.Console 类。）在程序一开始就声明了引用文件，则表示希望每当发现无法识别的类引用时，就查看这些命名空间。若在同一个代码中引用了两个名称相同意义不同的类，则可以使用类的全程来进行区分。  
+
+* 对于代码顶层开头的一系列 using 引用语句，若引用的文件并未在代码中被使用，则会显示为灰色，这些引用删除也可正常编译代码。  
+
+* **为第三方程序集创建引用**  
+
+* 网上搜索微软相关代码、文档。关键词** site:microsoft.com 关键词**  
+
+### 课堂代码  
+```cs
+using System;
+using System.IO;
+using System.Net;
+
+namespace AssembliesAndNamespace
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WebClient client = new WebClient();
+            string reply = client.DownloadString("http://msdn.microsoft.com");
+
+
+
+            Console.WriteLine(reply);
+            File.WriteAllText(@"C:\Time\Lesson17\WriteText.txt", reply);
+            Console.ReadLine();
+        }
+    }
+}</code></pre><h3 id="评估-9"><a href="#评估-9" class="headerlink" title="评估"></a>评估</h3><ul>
+<li><strong>命名空间</strong>主要是：C  <ul>
+<li>A. 一种将方法组织为类的方式  </li>
+<li>B. 一种将类组织为程序集 的方法  </li>
+<li>C. 一种消除库中类名称歧义的方式  </li>
+<li>D. 一种将类组织为项目的方式  </li>
+</ul>
+</li>
+</ul>
+<h2 id="第十八讲-创建和添加对程序集的引用"><a href="#第十八讲-创建和添加对程序集的引用" class="headerlink" title="第十八讲 创建和添加对程序集的引用"></a>第十八讲 创建和添加对程序集的引用</h2><h3 id="简介-9"><a href="#简介-9" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>了解 .NET 程序集:代码库和可执行文件、程序集的调试和发布版本。另外，了解如何引用程序集，利用 NuGet，并创建对自定义库的引用  </li>
+</ul>
+<h3 id="简记-15"><a href="#简记-15" class="headerlink" title="简记"></a>简记</h3><ul>
+<li><p>为程序集添加引用的三种方法：  </p>
+<ul>
+<li><ol>
+<li>来自 .NET Framework 类库的程序集  </li>
+</ol>
+</li>
+<li><ol start="2">
+<li>使用解决方案资源管理器，右键单击引用，然后选择“添加引用”进行添加<br>采用开放源代码，通过名为“NuGet”的特殊工具获取  </li>
+</ol>
+</li>
+<li><ol start="3">
+<li>当需要为之前创建的类库添加引用时  </li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="评估-10"><a href="#评估-10" class="headerlink" title="评估"></a>评估</h3><ul>
+<li><p>若想创建一个可在多个项目中重复使用的外部代码库，应该D  </p>
+<ul>
+<li>A. 将第二个项目添加到我的解决方案中  </li>
+<li>B. 创建一个代码库  </li>
+<li>C. 将一个类添加到我的项目中  </li>
+<li>D. 创建一个新的类库项目  </li>
+</ul>
+</li>
+<li><p>在项目中使用程序集的第一步是：D  </p>
+<ul>
+<li>A. 将程序集添加到你的项目文件夹  </li>
+<li>B. 添加一条引用程序集中命名空间的 using 语句  </li>
+<li>C. 在“项目属性” 页的“引用”选项卡中添加程序集名称  </li>
+<li>D. 使用“添加引用”对话框添加对程序集的引用  </li>
+</ul>
+</li>
+</ul>
+<h2 id="第十九讲-使用集合"><a href="#第十九讲-使用集合" class="headerlink" title="第十九讲 使用集合"></a>第十九讲 使用集合</h2><h3 id="简介-10"><a href="#简介-10" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>看到“旧式”集合以及几个利用泛型语法的较新强类型泛型集合(列表 和字典 )  </li>
+</ul>
+<h3 id="简记-16"><a href="#简记-16" class="headerlink" title="简记"></a>简记</h3><ul>
+<li><p>两种集合：列表（List）和词典（Dictionary）  </p>
+</li>
+<li><p>集合通过一种名为LINQ的语言技术，提供丰富的筛选、排序和聚合功能。LINQ（Language Integrated Query 语言集成查询）  </p>
+</li>
+<li><p><strong>ArrayList</strong>集合大小是动态的，无需再进行其他诸如一次次分别添加项之类的操作。支持诸如排序等实用功能，可以从集合中移除项  </p>
+</li>
+<li><p>ArrayList存在问题：无法以一种简单的方法来限制将要存储到数组中的数据类型。  </p>
+</li>
+<li><p>集合实质都是泛型的，但需要去规定该集合内允许的数据类型，使其具有针对性。  </p>
+</li>
+<li><p><strong>词典集合</strong>与网络搜索词典类似，当你需要查询一个词，你会按照字母顺序来找到它，并找到需要下定义的这个词。一旦找到后，你可以在它的右侧看到相关定义。字典中的每个条目都包含了两个组件：<strong>键和值本身</strong>。  </p>
+</li>
+<li><p>集合初始值设定语法  </p>
+</li>
+<li><p>集合初始值设定项  </p>
+</li>
+<li><p>总结：  </p>
+<ul>
+<li><strong>数组和集合间的差别</strong>  </li>
+<li><strong>旧式集合和新式泛型集合</strong>：新式泛型集合更先进，能确保我们只能将特定的数据类别加入集合中，以便我们通过传入该集合内允许引用的数据类型，将泛型集合变为特定集合。  </li>
+<li><strong>对象初始值设定项</strong>：是一种简写语法，用于初始化对象的新实例的属性  </li>
+<li><strong>集合初始值设定项</strong>，不仅创建新的集合，还使用汽车集合新实例初始化集合  </li>
+</ul>
+</li>
+</ul>
+<h3 id="本节代码"><a href="#本节代码" class="headerlink" title="本节代码"></a>本节代码</h3><pre class="line-numbers language-cs"><code class="language-cs">using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WorkingwithCollectiongs
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            Car car1 = new Car();
+            car1.Make = "Oldsmobile";
+            car1.Model = "Cutlas Supreme";
+            car1.VIN = "A1";
+
+            Car car2 = new Car();
+            car2.Make = "Geo";
+            car2.Model = "Prism";
+            car2.VIN = "B2";
+
+            Book b1 = new Book();
+            b1.Author = "Robert Tabor";
+            b1.Title = "Microsoft .NET XML Web Services";
+            b1.ISBN = "0-000-00000-0";
+            */
+
+            /*
+            // ArrayLists are dynamically sized,
+            // cool features sorting, remove items
+            ArrayList myArrayList = new ArrayList();
+            myArrayList.Add(car1);
+            myArrayList.Add(car2);
+            myArrayList.Add(b1);
+            myArrayList.Remove(b1);
+            foreach (Car car in myArrayList)
+            {
+                Console.WriteLine(car.Make);
+            }
+            */
+
+            /*
+            // 泛型列表
+            // List<T>
+            List<Car> myList = new List<Car>();     // 汽车专用数据类型列表
+            myList.Add(car1);
+            myList.Add(car2);
+            //myList.Add(b1);     //无法将书添加到该列表中
+            foreach (Car car in myList)
+            {
+                Console.WriteLine(car.Model);
+            }
+            */
+
+            /*
+            // 词典
+            // Dictionary<Tkey,Tvalue>
+            Dictionary<string, Car> myDictionary = new Dictionary<string, Car>();       // 创建字典
+
+            myDictionary.Add(car1.VIN, car1);       // 将汽车数据加入字典
+            myDictionary.Add(car2.VIN, car2);
+
+            Console.WriteLine(myDictionary["B2"].Make);     // 由特定关键值输出字典数据
+            */
+
+
+            //string[] names = { "Bob", "Steve", "Brian", "Chunk" };
+
+            // Object initializer 初始值设定项语法
+            // No need for a Constructor 无须构造函数
+            //Car car1 = new Car() { Make = "BMW", Model = "750li", VIN = "C3" };      // 创建变量，创建汽车实例，填充属性
+            //Ca/r car2 = new Car() { Make = "Toyota", Model = "4Runnner", VIN = "D4" };
+
+            // Collection initializer 集合初始值设定项
+            // 创建集合并添加两个对象，并在每个对象中对所有属性值进行初始化
+            List<Car> myList = new List<Car>() {
+                new Car{Make = "Oldsmobile", Model = "Cutlas Supreme", VIN = "E5"},
+                new Car{Make = "Nissan" , Model = "Altima" , VIN = "F6" }
+
+            };
+
+
+
+            Console.WriteLine();
+        }
+    }
+
+    class Car
+    {
+        public string VIN { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+    }
+
+    class Book
+    {
+        public string Title { get; set;}
+        public string Author { get; set;}
+        public string ISBN { get; set; }
+    }
+
+
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="第二十讲-使用-LINQ"><a href="#第二十讲-使用-LINQ" class="headerlink" title="第二十讲 使用 LINQ"></a>第二十讲 使用 LINQ</h2><h3 id="简介-11"><a href="#简介-11" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>观看使用枚举的演示、创建自定义枚举，然后在演示第三个判定语句 (switch) 的简单应用程序中使用该枚举  </li>
+</ul>
+<h3 id="简记-17"><a href="#简记-17" class="headerlink" title="简记"></a>简记</h3><ul>
+<li>两种不同的LINQ语法：  <ul>
+<li>用于查询数据库的类似于用于结构化查询语言（SQL）的查询语法  </li>
+<li>C#开发人员更熟悉的方法语法，但存在较奇怪的明明问题  </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>LINQ查询语法  </p>
+</li>
+<li><p>LINQ方法语法  </p>
+</li>
+<li><p>相关语句</p>
+<ul>
+<li><p><a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables" target="_blank" rel="noopener">var 关键词</a>为强类型化关键字。与JavaScrip或Visual Basic 含义有所不同。在本讲中表示让编译器来决定正确的数据类型是什么。  </p>
+</li>
+<li><p><a href="https://msdn.microsoft.com/zh-cn/library/bb534966(v=vs.110).aspx" target="_blank" rel="noopener">orderby</a>  </p>
+</li>
+<li><p><a href="https://msdn.microsoft.com/zh-cn/library/bb548891(v=vs.110).aspx" target="_blank" rel="noopener">select</a>  </p>
+</li>
+<li><p><a href="https://msdn.microsoft.com/zh-cn/library/bb535050(v=vs.110).aspx" target="_blank" rel="noopener">First</a>  </p>
+</li>
+<li><p><a href="https://msdn.microsoft.com/zh-cn/library/x2kykt9x(v=vs.110).aspx" target="_blank" rel="noopener">trueforall</a> 适合于聚合和全部查看以及检验列表中所有项是否都为真  </p>
+</li>
+<li><p><a href="https://msdn.microsoft.com/zh-cn/library/system.io.file.exists(v=vs.110).aspx" target="_blank" rel="noopener">Exists</a> 确定指定的文件是否存在  </p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="本节代码-1"><a href="#本节代码-1" class="headerlink" title="本节代码"></a>本节代码</h3><pre class="line-numbers language-cs"><code class="language-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace UnderstandingLINQ
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Car> myCars = new List<Car>() {
+                new Car() { VIN="A1", Make = "BMW", Model= "550i", StickerPrice=55000, Year=2009},
+                new Car() { VIN="B2", Make="Toyota", Model="4Runner", StickerPrice=35000, Year=2010},
+                new Car() { VIN="C3", Make="BMW", Model = "745li", StickerPrice=75000, Year=2008},
+                new Car() { VIN="D4", Make="Ford", Model="Escape", StickerPrice=25000, Year=2008},
+                new Car() { VIN="E5", Make="BMW", Model="55i", StickerPrice=57000, Year=2010}
+            };
+
+            // LINQ query LINQ查询语法
+            /*// 条件查找
+            var bmws = from car in myCars
+                       where car.Make == "BMW"
+                       &&  car.Year == 2010
+                       select car;
+
+            */
+
+            /*// 按年份排序
+            var orderedCars = from car in myCars
+                              orderby car.Year descending
+                              select car;
+            */
+
+            // LINQ method 方法语法
+            // var bmws = myCars.Where(p => p.Make == "BMW" && p.Year == 2010);
+
+            // var orderedCars = myCars.OrderByDescending(p => p.Year);
+
+            // var firstBMW = myCars.First(p => p.Make == "BMW");      // 输出查找结果第一项
+
+            /*
+            var firstBMW = myCars.OrderByDescending(p => p.Year).First(p => p.Make == "BMW");       // 取按年份排序第一项
+            Console.WriteLine(firstBMW.VIN);
+            */
+
+            //Console.WriteLine(myCars.TrueForAll(p => p.Year > 2002));       // 判断某个属性是否都符合某个要求
+
+
+            //myCars.ForEach(p => p.StickerPrice -= 3000);        // 从每项基础估价中减去3000
+            //myCars.ForEach(p => Console.WriteLine("{0}{1:C}", p.VIN, p.StickerPrice));  // 简短化代码：有序输出并估价
+
+            //Console.WriteLine(myCars.Exists(p => p.Model == "745li"));  // 检查指定的 745li 是否存在
+
+            //Console.WriteLine(myCars.Sum(p => p.StickerPrice));     // 重点：聚合：所有对象中单个字段的和
+
+            Console.WriteLine(myCars.GetType());
+            var orderedCars = myCars.OrderByDescending(p => p.Year);
+            Console.WriteLine(orderedCars.GetType());
+
+
+
+            /*
+            foreach (var car in orderedCars)
+            {
+                Console.WriteLine("{0} {1}", car.Year, car.Model, car.VIN);
+            }
+            */
+
+
+
+
+
+            Console.ReadLine();
+        }
+    }
+
+    class Car
+    {
+        public string VIN { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
+        public double StickerPrice { get; set; }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="第二十一讲-枚举和-Switch-判定语句"><a href="#第二十一讲-枚举和-Switch-判定语句" class="headerlink" title="第二十一讲 枚举和 Switch 判定语句"></a>第二十一讲 枚举和 Switch 判定语句</h2><h3 id="简介-12"><a href="#简介-12" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>观看使用枚举的演示、创建自定义枚举，然后在演示第三个判定语句 (switch) 的简单应用程序中使用该枚举  </li>
+</ul>
+<h3 id="简记-18"><a href="#简记-18" class="headerlink" title="简记"></a>简记</h3><ul>
+<li><p>一个特殊的数据类型：枚举。优势：它们是描述性的，并且能够限制我们的应用程序以及我们的类的属性的可能值数量  </p>
+</li>
+<li><p>评估点:枚举主要用于：限制给定属性或变量可以设置的值的数量  </p>
+</li>
+</ul>
+<h3 id="本节代码-2"><a href="#本节代码-2" class="headerlink" title="本节代码"></a>本节代码</h3><pre class="line-numbers language-cs"><code class="language-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EnumsAndSwitch
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Todo> todos = new List<Todo>()
+            {
+                new Todo { Description = "Task 1", EstimatedHours = 6, Status = Status.Completed },
+                new Todo { Description = "Task 2", EstimatedHours = 2, Status = Status.InProgress },
+                new Todo { Description = "Task 3", EstimatedHours = 8, Status = Status.NotStarted },
+                new Todo { Description = "Task 4", EstimatedHours = 12, Status = Status.Deleted },
+                new Todo { Description = "Task 5", EstimatedHours = 6, Status = Status.InProgress },
+                new Todo { Description = "Task 6", EstimatedHours = 2, Status = Status.NotStarted },
+                new Todo { Description = "Task 7", EstimatedHours = 14, Status = Status.NotStarted },
+                new Todo { Description = "Task 8", EstimatedHours = 8, Status = Status.Completed },
+                new Todo { Description = "Task 9", EstimatedHours = 8, Status = Status.InProgress },
+                new Todo { Description = "Task 10", EstimatedHours = 8, Status = Status.Completed },
+                new Todo { Description = "Task 11", EstimatedHours = 4, Status = Status.NotStarted },
+                new Todo { Description = "Task 12", EstimatedHours = 10, Status = Status.Completed },
+                new Todo { Description = "Task 13", EstimatedHours = 12, Status = Status.Deleted },
+                new Todo { Description = "Task 14", EstimatedHours = 6, Status = Status.Completed }
+            };
+
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+
+            PrintAssessment(todos);
+            Console.ReadLine();
+
+        }
+
+        private static void PrintAssessment(List<Todo> todos)
+        {
+            foreach (var todo in todos)
+            {
+                switch (todo.Status)
+                {
+                    case Status.NotStarted:
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        break;
+                    case Status.InProgress:
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        break;
+                    case Status.OnHold:
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        break;
+                    case Status.Completed:
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        break;
+                    case Status.Deleted:
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        break;
+                    default:
+                        break;
+                }
+                Console.WriteLine(todo.Description);
+            }
+        }
+    }
+
+    class Todo
+    {
+        public string Description { get; set; }     // 待办项描述
+        public int EstimatedHours { get; set; }     // 待办项需要小时数
+        public Status Status { get; set; }          // 状态类型
+    }
+
+    enum Status         // 状态枚举
+    {
+        NotStarted,     // 尚未开始
+        InProgress,     // 进行中
+        OnHold,         // 暂停
+        Completed,      // 已完成
+        Deleted         // 已删除
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="第二十二讲-正常处理异常"><a href="#第二十二讲-正常处理异常" class="headerlink" title="第二十二讲 正常处理异常"></a>第二十二讲 正常处理异常</h2><h3 id="简介-13"><a href="#简介-13" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>了解如何使用 try catch finally 块预测潜在问题，以使最终用户尽量避免遇到这些问题。探讨检查异常时的最佳做法  </li>
+</ul>
+<h3 id="简记-19"><a href="#简记-19" class="headerlink" title="简记"></a>简记</h3><ul>
+<li><p><a href="https://msdn.microsoft.com/zh-cn/library/system.io.file.readalltext(v=vs.110).aspx" target="_blank" rel="noopener">File.ReadAllText</a> 打开一个文本 文件，将文件的所有行读入一个字符串，然后关闭该文件  </p>
+</li>
+<li><p>将一些内容包括到 try/catch 中，并且尽量考虑到你有可能要处理的异常，寻找到那些据你所知某个特定方法可能导致的具体异常。  </p>
+</li>
+<li><p><a href="https://msdn.microsoft.com/zh-cn/library/system.exception.message(v=vs.110).aspx" target="_blank" rel="noopener">ex.Message</a> 获取描述当前异常的消息  </p>
+</li>
+<li><p><a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/keywords/try-finally" target="_blank" rel="noopener">finally</a>  </p>
+</li>
+</ul>
+<h2 id="第二十三讲-了解事件和事件驱动编程"><a href="#第二十三讲-了解事件和事件驱动编程" class="headerlink" title="第二十三讲 了解事件和事件驱动编程"></a>第二十三讲 了解事件和事件驱动编程</h2><h3 id="简介-14"><a href="#简介-14" class="headerlink" title="简介"></a>简介</h3><ul>
+<li>了解如何在 .NET Framework 类库中使用事件。从使用 Timer 类入手，逐步构建一个基本的 “Hello World” 应用程序  </li>
+</ul>
+<h3 id="简记-20"><a href="#简记-20" class="headerlink" title="简记"></a>简记</h3><ul>
+<li><p><strong>事件驱动编程</strong>是Microsoft的presentation API 的核心，无论对于 Web 还是 Windows 都是如此。可以说它是.NET Framework类库中所有其他 API 的核心。它是帮助构建具有真实用户界面的真实应用程序的必经步骤。  </p>
+</li>
+<li><p>利用事件，开发人员能够通过处理应用程序执行生命周期中的关键时刻来作出响应，你可以编写代码来响应出现的事件。  </p>
+</li>
+<li><p>后续分支可学习方向：ASP.net、WPF、UWP  </p>
+</li>
+</ul>
+<h3 id="本讲代码"><a href="#本讲代码" class="headerlink" title="本讲代码"></a>本讲代码</h3><h4 id="cs"><a href="#cs" class="headerlink" title="cs"></a>cs</h4><pre class="line-numbers language-cs"><code class="language-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Timers;
+
+namespace TimerExample
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Timer myTimer = new Timer(2000);
+
+            myTimer.Elapsed += MyTimer_Elapsed;   // MyTimer_Elapsed的事件附加或注册到Elapsed事件
+            myTimer.Elapsed += MyTimer_Elapsed1;  // 运算符+=作用：指定多少在订阅或被附加到这个事件的当前项也附加上另一个事件处理程序
+
+            myTimer.Start();  // 计时器开始
+
+            Console.WriteLine("Press enter to remove the red event.");
+            Console.ReadLine();
+
+            myTimer.Elapsed -= MyTimer_Elapsed1;
+
+            Console.ReadLine();
+        }
+
+        private static void MyTimer_Elapsed1(object sender, ElapsedEventArgs e)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Elapsed1:{0:HH:mm:ss.fff}", e.SignalTime);
+        }
+
+        private static void MyTimer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("Elapsed:{0:HH:mm:ss.fff}", e.SignalTime);
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="WPF"><a href="#WPF" class="headerlink" title="WPF"></a>WPF</h4><ul>
+<li><p>布局<br><img src="https://res.cloudinary.com/imgcave/image/upload/v1592731714/Img/BlogCover/23_WPF_1_usxrat.png" alt="WPF布局图片">  </p>
+</li>
+<li><p>代码  </p>
+<pre class="line-numbers language-cs"><code class="language-cs">  using System;
+  using System.Collections.Generic;
+  using System.Linq;
+  using System.Text;
+  using System.Threading.Tasks;
+  using System.Windows;
+  using System.Windows.Controls;
+  using System.Windows.Data;
+  using System.Windows.Documents;
+  using System.Windows.Input;
+  using System.Windows.Media;
+  using System.Windows.Media.Imaging;
+  using System.Windows.Navigation;
+  using System.Windows.Shapes;
+
+  namespace WPFEvents
+  {
+      /// <summary>
+      /// MainWindow.xaml 的交互逻辑
+      /// </summary>
+      public partial class MainWindow : Window
+      {
+          public MainWindow()
+          {
+              InitializeComponent();
+              button.Click += button_MyOtherClick;
+          }
+
+          private void button_MyOtherClick(object sender, RoutedEventArgs e)
+          {
+              myOtherLable.Content = "Hello again!";
+          }
+
+          private void button_Click(object sender, RoutedEventArgs e)
+          {
+              myLabel.Content = "Hello ezhq.xyz";
+          }
+      }
+  }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<h2 id="第二十四讲-下一步该怎么做"><a href="#第二十四讲-下一步该怎么做" class="headerlink" title="第二十四讲 下一步该怎么做"></a>第二十四讲 下一步该怎么做</h2><h3 id="简介-15"><a href="#简介-15" class="headerlink" title="简介"></a>简介</h3><p>了解解决常见问题的方法，去何处寻求帮助，如何寻找问题的答案，并成为 .NET 社区的一部分。查看详细了解开发应用程序的长期路径  </p>
+<h3 id="简记-21"><a href="#简记-21" class="headerlink" title="简记"></a>简记</h3><ul>
+<li><p>学会搜索  </p>
+</li>
+<li><p>相关提问技巧  </p>
+</li>
+<li><p>寻求帮助去处：  </p>
+<ul>
+<li><strong>MSDN论坛</strong>：<a href="https://social.msdn.microsoft.com/forums/" target="_blank" rel="noopener">https://social.msdn.microsoft.com/forums/</a>  </li>
+</ul>
+</li>
+<li><p>后续学习建议：</p>
+<ul>
+<li><p>诸如SQL serve 的关系数据库知识  </p>
+</li>
+<li><p>学习如何使用.net API的 Entity Framework 部分来访问数据库内存储的信息，访问应用中的数据  </p>
+</li>
+<li><p>不知后续如何，可从HTML5、CSS3 和 JavaScript 入手  </p>
+</li>
+<li><p>一些可供选择的关键词：</p>
+<ul>
+<li><p><strong>面向对象编程</strong>  </p>
+</li>
+<li><p><strong>软件开发原理</strong>（如<strong>驱进原理</strong>、<strong>YAGNI原则</strong>、<strong>依赖关系注入</strong>（对于使用asp.net core MVC 等来创建某些新型应用程序非常重要）、<strong>SOLID</strong>（每个字母代表一个不同的次级原理，帮助你意识到你的应用程序中的面向对象的编程的可能））  </p>
+</li>
+<li><p><strong>软件开发的过程</strong>、<strong>有关软件开发和管理软件项目的工作流程</strong>（即团队工作时需要用到的特定工具和技术，利用 Git 或 Visual Studio Online等源代码存储库或是团队自己的内部源代码存储库工具来与团队成员分享、执行或获得源代码）  </p>
+</li>
+<li><p><strong>构建单元测试</strong>  </p>
+</li>
+<li><p><strong>敏捷项目管理</strong>、<strong>敏捷软件开发</strong>、<strong>迭代开发的性质</strong>  </p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="附1：语法集合"><a href="#附1：语法集合" class="headerlink" title="附1：语法集合"></a>附1：语法集合</h2><ul>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/ezftk57x(v=vs.110).aspx" target="_blank" rel="noopener">String.ToCharArray方法()</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-tw/library/d3877932(v=vs.110).aspx" target="_blank" rel="noopener">Array.Reverse方法(Array)</a>  </li>
+<li><a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/keywords/foreach-in" target="_blank" rel="noopener">foreach in</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/b3h1hf19(v=vs.100).aspx" target="_blank" rel="noopener">int32.Parse(String)</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/system.console.clear(v=vs.110).aspx" target="_blank" rel="noopener">Console.Clear</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/system.random(v=vs.110).aspx" target="_blank" rel="noopener">Random</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/2dx6wyd4(v=vs.110).aspx" target="_blank" rel="noopener">Random.Next(Int32, Int32)</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/system.string.format(v=vs.110).aspx" target="_blank" rel="noopener">String.Format</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/hxthx5h6(v=vs.110).aspx" target="_blank" rel="noopener">String.Substring(Int32)</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/aka44szs(v=vs.110).aspx" target="_blank" rel="noopener">String.Substring(Int32,Int32)</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/ewdd6aed(v=vs.110).aspx" target="_blank" rel="noopener">String.ToUpper()</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/czx8s9ts(v=vs.110).aspx" target="_blank" rel="noopener">String.Replace(Char, Char)</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/d8d7z2kk(v=vs.110).aspx" target="_blank" rel="noopener">String.Remove(Int32, Int32)</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/t97s7bs3(v=vs.110).aspx" target="_blank" rel="noopener">String.Trim()</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/system.text.stringbuilder(v=vs.110).aspx" target="_blank" rel="noopener">StringBuilder</a>  </li>
+<li><a href="https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/standard-numeric-format-strings" target="_blank" rel="noopener">标准数字格式字符串（英语）</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/241ad66z(v=vs.80).aspx" target="_blank" rel="noopener">标准数字格式字符串（中文）</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/364x0z75(v=vs.71).aspx" target="_blank" rel="noopener">decimal</a>  </li>
+<li><a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables" target="_blank" rel="noopener">Var</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/bb534966(v=vs.110).aspx" target="_blank" rel="noopener">orderby</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/bb548891(v=vs.110).aspx" target="_blank" rel="noopener">select</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/bb535050(v=vs.110).aspx" target="_blank" rel="noopener">First</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/x2kykt9x(v=vs.110).aspx" target="_blank" rel="noopener">trueforall</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/system.io.file.exists(v=vs.110).aspx" target="_blank" rel="noopener">Exists</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/system.io.file.readalltext(v=vs.110).aspx" target="_blank" rel="noopener">File.ReadAllText</a>  </li>
+<li><a href="https://msdn.microsoft.com/zh-cn/library/system.exception.message(v=vs.110).aspx" target="_blank" rel="noopener">ex.Message</a>  </li>
+<li><a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/keywords/try-finally" target="_blank" rel="noopener">finally</a>  </li>
+</ul>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://aurdes.com" rel="external nofollow noreferrer">ezhq</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://aurdes.com/cn/2017071812/">https://aurdes.com/cn/2017071812/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a>
+                    reprint polocy. If reproduced, please indicate source
+                    <a href="https://aurdes.com" target="_blank">ezhq</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Dev/">
+                                    <span class="chip bg-color">Dev</span>
+                                </a>
+                            
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C#</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,linkedin,qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">Pay</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Cheers !</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">AliPay</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">Wechat Pay</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="Alipay QRCode">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="Wechat Pay QRCode">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/cn/2017081006/">
+                    <div class="card-image">
+                        
+                        <img src="https://res.cloudinary.com/imgcave/image/upload/v1592717859/Img/BlogCover/WindowsTerminal_gafcjn.jpg" class="responsive-img" alt="CMD获取历史WiFi名称和密码">
+                        
+                        <span class="card-title">CMD获取历史WiFi名称和密码</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            命令行获取历史 WiFi 名称和密码
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2017-08-04
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Life/" class="post-category">
+                                    Life
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Life/">
+                        <span class="chip bg-color">Life</span>
+                    </a>
+                    
+                    <a href="/tags/Terminal/">
+                        <span class="chip bg-color">Terminal</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/cn/2017042201/">
+                    <div class="card-image">
+                        
+                        <img src="https://res.cloudinary.com/imgcave/image/upload/v1592659485/Img/BlogCover/MDN_bsrzjo.jpg" class="responsive-img" alt="MDN《学习Web开发》教程中网站提交的补充">
+                        
+                        <span class="card-title">MDN《学习Web开发》教程中网站提交的补充</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            教程中网站发布过程中一些细节问题的解决
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-04-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Dev/" class="post-category">
+                                    Dev
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Dev/">
+                        <span class="chip bg-color">Dev</span>
+                    </a>
+                    
+                    <a href="/tags/Git/">
+                        <span class="chip bg-color">Git</span>
+                    </a>
+                    
+                    <a href="/tags/Frontend/">
+                        <span class="chip bg-color">Frontend</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + 'From: Aurdes<br />'
+            + 'Author: ezhq<br />'
+            + 'Link: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('2'),
+            headingSelector: 'h1, h2, h3, h4, h5, h6'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5, h6').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="506138655"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2016</span>
+            <a href="/about" target="_blank">ezhq</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;PV:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;time
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;UV:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;people
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2016";
+                    var startMonth = "7";
+                    var startDate = "31";
+                    var startHour = "12";
+                    var startMinute = "12";
+                    var startSecond = "12";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "Total running " + diffDays + " days " + diffHours +
+                            " hours " + diffMinutes + " minutes " + diffSeconds + " seconds";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "Total running " + diffYears + " years " + diffDays +
+                            " days " + diffHours + " hours " + diffMinutes + " minutes " + diffSeconds + " seconds";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/ezhq" class="tooltipped" target="_blank" data-tooltip="Follow my GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:ezhq@outlook.com" class="tooltipped" target="_blank" data-tooltip="Email me" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS feed" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
